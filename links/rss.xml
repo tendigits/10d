@@ -1,277 +1,489 @@
-<?xml version='1.0' encoding='UTF-8' ?><rss version='2.0' xmlns:dc='http://purl.org/dc/elements/1.1/'><channel>
-
-
-<title>Hundred Rabbits</title>
-<link>https://100r.co</link>
-<description>Rekka and Devine travel updates</description>
- <image>
-<url>https://100r.co/media/services/rss.jpg</url>
-<title>Hundred Rabbits</title>
-<link>https://100r.co</link>
-</image>
-<item>
-  <title>Summary of changes for March</title>
-  <link>https://100r.co/site/log.html#mar2021</link>
-  <guid isPermaLink='false'>log.html#feb2021</guid>
-  <pubDate>Thu, 01 Mar 2021 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Hey everyone! This is the list of all the changes we've done to our projects and apps during the month of March. We'll also be reporting in our on position in the world, and on our future plans.</p>
-<h2>Summary Of Changes</h2>
-<ul>
-    <li><b><a href='https://wiki.xxiivv.com/site/uxn.html'>Uxn</a></b>, lots of progress on Uxn, started documenting the <a href='https://wiki.xxiivv.com/site/uxambly.html' target='_blank'>assembly syntax</a>, built a <a href='https://wiki.xxiivv.com/site/uxnemu.html' target='_blank'>Uxn emulator</a> with a handful of devices, from date/time support, to graphics, mouse, and soon audio and midi support. Rekka designed some additional <a href='https://merveilles.town/@neauoire/105874063074976605' target='_blank'>mascots</a> for the project.</li>
-    <li><b><a href='https://wiki.xxiivv.com/site/noodle.html' target='_blank'>Noodle</a></b>, implemented <a href='https://www.youtube.com/watch?v=39ixX7Ixvnw' target='_blank'>Noodle into Uxn</a>, with presentation modes, save/load and various patterns to create 1-bit graphics.</li>
-    <li><b><a href='https://100r.co/site/busy_doing_nothing.html' target='_blank'>Busy Doing Nothing</a></b>, fixed type and formatting errors, and removed the fixed font. It is now easier to read on phones.</li> 
-    <li><b><a href='https://grimgrains.com' target='_blank'>Grimgrains</a></b>, added a <a href='https://grimgrains.com/site/sourdough_spelt_flatbread.html' target="_blank">Sourdough spelt flatbread</a> recipe.</li>
-    <li><b><a href='https://kokorobot.ca/site/wunderrabbits.html' target='_blank'>Wunderland rabbits</a></b>, released a small photo project involving traveling, and rabbits.</li>
-</ul>
-
-<h3>News</h3>
-
-<p>This month, the rabbits have been busy making new holes in Pino, cutting metal, and building a support platform for their new <a href='https://twitter.com/hundredrabbits/status/1372001452898488321' target='_blank'>tiny woodstove</a>. When the installation is complete, we have plans to write a blog post about the process.</p>
-
-<p>If you're seeing this update on the 100r.co website, you'll notice that all logs are now in the <a href='log.html'>same file</a>. It is easier for us to manage, and we think, more pleasant for you to read.</p>
-
-<p>We have received a lot of really good feedback and corrections for our book <a href='https://100r.co/site/busy_doing_nothing.html' target='_blank'>Busy Doing Nothing</a>, thank you for reading it. Rekka has updated their notes on <a href='https://kokorobot.ca/site/pandoc.html' target='_blank'>creating e-books with Pandoc</a> to include exports to epub and mobi (for those interested).</p>
-
-<h3>Pino book club</h2>
-<p>We're reading <b>The Complete Rigger’s Apprentice</b> by Brion Toss and <b>Thinking Forth</b> by Leo Brody.</p>
-
-<p><b>Pino's location:</b> 48° 42.230'N, 123° 36.900'W</p>
-<p><a href='https://100r.co/site/log.html#mar2021'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Summary of changes for February</title>
-  <link>https://100r.co/site/log.html#feb2021</link>
-  <guid isPermaLink='false'>summary_of_changes_2021_feb</guid>
-  <pubDate>Sun, 28 Feb 2021 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Hey everyone! This is the list of all the changes we've done to our projects and apps during the month of February. We'll also be reporting in our on position in the world, and on our future plans.</p>
-<h2>Summary Of Changes</h2>
-<ul>
-    <li><b><a href='https://wiki.xxiivv.com/site/uxn.html'>Uxn</a></b>, started working on a <a href='https://merveilles.town/web/statuses/105795639316214608' target="_blank">fantasy console</a> called Uxn, and designed a <a href='https://merveilles.town/@neauoire/105658287273107103' target='_blank'>mascot</a>.</li>
-    <li><b><a href='https://100r.co' target='_blank'>100r.co</a></b>, added a <a href='https://twitter.com/hundredrabbits/status/1360681748770611201' target='_blank'>dark mode</a> as an accessibility feature, and added new drawings to <a href='https://100r.co/site/cooking.html#a_floating_kitchen'>cooking</a> and <a href='https://100r.co/site/sailing.html#slow_and_steady'>sailing</a>.</li> 
-    <li><b><a href='https://grimgrains.com' target='_blank'>Grimgrains</a></b>, also added a <a href='https://merveilles.town/@rek/105721363161966256' target='_blank'>dark mode</a>.</li>
-    <li><b><a href='https://wiktopher.ca' target='_blank'>Wiktopher</a></b>, what is this? Another <a href='https://merveilles.town/@rek/105732319713413045'>dark mode</a>. Now our eyes are happy.</li>
-</ul>
-<h2>News</h2>
-<p>This month, we released the e-book version of the North Pacific Logbook titled <a href='https://hundredrabbits.itch.io/busy-doing-nothing' target='_blank'>Busy Doing Nothing</a>. The book is 217 pages long, and is available as a PDF, mobi or EPUB. We're happy it's out, and hope that you like it!</p>
-<p>In other news, Esoteric.Codes <a href='https://esoteric.codes/blog/100-rabbits' target='_blank'>interviewed</a> our studio, and we heard that the Toronto Public Library was hosting an <a href='https://twitter.com/hundredrabbits/status/1364419919547228162?s=20' target="_blank">online Orca workshop</a> on March 1st—how cool is that?</p>
-<h2>Pino book club</h2>
-<p>We're reading <b>A Sand County Almanac</b> by Aldo Leopold.</p>
-<p><a href='https://100r.co/site/log.html#feb2021'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Summary of changes for January</title>
-  <link>https://100r.co/site/log.html#jan2021</link>
-  <guid isPermaLink='false'>summary_of_changes_2021_jan</guid>
-  <pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Hey everyone! This is the list of all the changes we've done to our projects and apps during the month of January. We'll also be reporting in our on position in the world, and on our future plans.</p><p><a href='https://100r.co/site/log.html#jan2021.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Summary of changes for December</title>
-  <link>https://100r.co/site/log.html#nov2020</link>
-  <guid isPermaLink='false'>summary_of_changes_2020_dec</guid>
-  <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Hey everyone! This is the list of all the changes we've done to our projects and apps during the month of December. We'll also be reporting in our on position in the world, and on our future plans.</p><p><a href='https://100r.co/site/log.html#nov2020'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Summary of changes for November</title>
-  <link>https://100r.co/site/log.html#oct2020</link>
-  <guid isPermaLink='false'>summary_of_changes_2020_nov</guid>
-  <pubDate>Mon, 30 Nov 2020 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Hey everyone! This is the list of all the changes we've done to our projects and apps during the month of November. We'll also be reporting in our on position in the world, and on our future plans.</p><p><a href='https://100r.co/site/log.html#oct2020'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Summary of changes for October</title>
-  <link>https://100r.co/site/log.html#sep2020</link>
-  <guid isPermaLink='false'>summary_of_changes_2020_oct</guid>
-  <pubDate>Sat, 31 Oct 2020 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Hey everyone! This is the list of all the changes we've done to our projects and apps during the month of October. We'll also be reporting in our on position in the world, and on our future plans.</p><p><a href='https://100r.co/site/log.html#sep2020'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Working offgrid efficiently</title>
-  <link>https://100r.co/site/working_offgrid_efficiently.html</link>
-  <guid isPermaLink='false'>working_offgrid_efficiently</guid>
-  <pubDate>Tue, 13 Oct 2020 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<img src='https://100r.co/media/blog/working/dworking5.jpg' width='600'/><p>Our traveling studio has operated off-the-grid for 4 1/2 years.</p><p>For the first 3 years we tested the limits of our space, and at first, it was difficult to create new things, as we had to make time to learn how to solve underlying problems. Our boat was not just an office, it was also our house and transport. As for us, we were artists, but also plumbers, deckhands, electricians, captains, janitors and accountants.</p><p>Our main problems as a studio were internet scarcity, power management, data storage as well as hardware and software failures. Overtime we found ways to balance work, pleasure and maintenance. Here are some of the lessons we learnt.</p><p><a href='https://100r.co/site/working_offgrid_efficiently.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>North Pacific Logbook</title>
-  <link>https://100r.co/site/north_pacific_logbook.html</link>
-  <guid isPermaLink='false'>north_pacific_logbook</guid>
-  <pubDate>Fri, 31 Jul 2020 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<img src='https://100r.co/media/blog/logbook/charts.jpg' width='600'/><p>The passage from <b>Japan</b> (Shimoda) to <b>Canada</b> (Victoria) took <b>51 days</b>, and it was the hardest thing we've ever done. We decided to keep a logbook, to better remember it and so it can help others who wish to make this trip.</p><p><a href='https://100r.co/site/north_pacific_logbook.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>Typhoons and mold</title>
-  <link>https://100r.co/site/typhoons_and_mold.html</link>
-  <guid isPermaLink='false'>typhoons_and_mold</guid>
-  <pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<img src='https://100r.co/media/blog/typhoons/12.jpg' width='600'/><p>For every traveling sailor, comes a time when the boat has to stay alone in a foreign country. For us, this happened this year in <a href='https://100r.co/site/sailing_in_japan.html'>Japan</a>. We'd never left <a href='https://100r.co/site/pino.html'>Pino</a> alone before, never for more than a week. We were apprehensive at first, but decided it would be a good learning experience, for us and our beloved.</p><p>Whenever we mentioned leaving our boat in Japan, people would say, "Aren't you afraid of typhoons?" Our 6 month leave coincided with the time of year when typhoons affect Japan, with August to October being the worse months. We were worried, but knew that if we prepared well, Pino would be fine. We spent weeks planning our departure, doing research on how to keep a boat safe in a storm, but also, how to keep mold and insects at bay in our absence.</p><p>While in Canada, I had anxiety at night, vivid dreams about what was happening to Pino. These dreams involved us returning to the boat, only to find it turned into a moldy, water-logged cockroach motel. Having no experience leaving our home behind, I had no guarantee that we had done enough.</p><p>When we returned 6 months later, we found no mold, no bugs and little to no damage, in fact, we slept in that same night. Pino endured weeks of hot Japanese summers, tropical rain and typhoon-strength winds. We're happy to say that overall, our preparations were indeed enough.</p><p>Below is a short list of things to remember, things we learned, when came time to prepare our boat for long-term storage:</p><ul class='bullet'><li>Ventilation is key.</li><li>Clear the decks.</li><li>Don't keep food.</li><li>Clean everything.</li><li>Store away everything.</li><li>Don't leave openings.</li><li>Tie everything down.</li></ul><p><a href='https://100r.co/site/typhoons_and_mold.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>a home for pino</title>
-  <link>https://100r.co/site/a_home_for_pino.html</link>
-  <guid isPermaLink='false'>a_home_for_pino</guid>
-  <pubDate>Sun, 11 Aug 2019 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>We left Shimizu on a sunny morning, pushing off the dock at 6am. Early. We wanted to make sure we'd arrive at our destination on time. There was 126nm between us and Shima Yacht harbor, a distance we needed to do in part at night. This wasn't ideal. We knew that. Many people warned us about sailing at night in these waters, but as the Japanese say: 'Shoganai' (it is what it is!). We needed to cross a big stretch of water called Enshu Nada, an area with a lot of traffic. In truth, the entire coastline is full of ships, but it gets very busy north of the Kii Peninsula.</p><p>We left Shimizu on a sunny morning, pushing off the dock at 6am. We discussed our plans with our friends Masa and Shu from Dawntreader, they too recommended a non-stop trip because the ports between Omaezaki and Mie are few. There is the port of Fukuda 福田, located at the mouth of Ota Kawa, but the depth of the water is  inconsistent and prone to silting. Locals also warned us it wasn't very yacht-friendly, and so we put an X on Fukuda.</p><p>Shu instructed us to stay 10nm from shore, to avoid the many nets lining the coast, and to avoid small fishing vessels idling there at night. We did as told.</p><img src='https://100r.co/media/blog/minamiise/minami_1.jpg'/><p>Coming out of Shimizu port, we came face to face with a large container ship named 'One'. A beautiful ship. Red, with a peculiar shape. The marina had warned us about its coming, that its entrance into Shimizu port was scheduled at 6am during our exit. Avoiding it was not a problem.</p><p>We powered out of the harbor and into Suruga Bay. There was no wind, but we raised the mainsail anyway. We wanted to test our new slugs (what keeps the mainsail attached to the mast). It was the first time since Fiji that we'd raised a full main. The black moon shook off its wrinkles, presenting its belly to the sun.</p><p><a href='https://100r.co/site/a_home_for_pino.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>tools ecosystem</title>
-  <link>https://100r.co/site/tools_ecosystem.html</link>
-  <guid isPermaLink='false'>tools_ecosystem</guid>
-  <pubDate>Mon, 22 Jul 2019 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>How did the Hundredrabbits ecosystem come into being? It's a long story, but here's a summary.</p><p>In 2016, we left Canada, armed with our two iPhones and 2 MacBooks Pros. We didn't know the wattage of any of the devices we owned,  and even less about the amount of solar needed to power them. When living on land we didn't pay attention to how many amps our devices required daily. Electricity felt limitless.</p><p>When we started sailing in BC, we had no dinghy and so we'd go from dock to dock. When we purchased Iggy in Nanaimo, we spent more days on the hook. The first anchorage we went to was a small bight east of Eagle Point, it offered a great view of metro Vancouver. From that point on we spent more and more time at anchor, moving every 5 days or so. We had no power concerns because our route always included marinas, or guest slips at yacht clubs. Our batteries were always topped up.</p><p>Life off-grid was new to us then, as was spending lots of time outdoors. We liked it, a lot. When at anchor we'd go explore, spend a few hours working, cooking, then we'd read or play card games in evenings. When living on land, we'd work from 8h-19h, sitting in front of our respective screens, but now things were different. We wanted to do less of that, to take long bike ride around islands or to sit on the deck in evenings to watch the sun set. Then, at marinas where we had both power and  internet, we'd go back to working longer hours to get things done. This was a fine setup, we thought, but, there was problem: what happens when we start living AND working at anchor full time? We liked being outdoors, but that's not all we wanted to do. We're creatives, and we need to make things. We were relying on powered docks to work, and so we never got to test our current power setup off-grid. If we had spent a month or so away from  civilization, we would have learnt that we had to change something.</p><p>And so, to continue with the story, we left Canada and cruised down the coast of the US. True to our old habits, we continued to alternate between staying in a marina and at anchor. The longest we spent off-grid during that time was 3 weeks in San Francisco, anchored off Treasure Island. During that time we discovered that working aboard, running two Macbook Pros, a refrigerator and our phones was not possible. To save on power, we started turning the fridge off at night, and taking trips into town during the day to work from cafes. SF was grey on most days, our solar couldn't keep up with our demanding work schedules. Going to work from cafes in town worked well for us, most had outlets we could use. Our routine started with working from cafes until lunch, then wandering around in the afternoons. We would return home before dark to turn the fridge off, but doing it didn't make sense because the constant shifts in temperatures produced too much moisture. Moisture meant rot and mold. We decided that keeping it off was a better idea for both our batteries and our produce. With the fridge out of the equation, we figured that we'd have more power left-over for our laptops.</p><p><a href='https://100r.co/site/tools_ecosystem.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>hello fujisan</title>
-  <link>https://100r.co/site/hello_fujisan.html</link>
-  <guid isPermaLink='false'>hello_fujisan</guid>
-  <pubDate>Wed, 13 Mar 2019 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>It's 8h00 pm on a cold dark winter night, we are outside of Shimizu harbor motoring in circles and waiting for a response from Shimizu Port Control. The temperature is 4 °C, the wind is blowing hard and our clothes are wet and caked with salt. We’re tired and hungry, waiting for permission to enter the Port. Prior to this, we had a rough 4-day passage, riding under 30-40 knot winds on the nose. This passage was a true test of strength, for us and for Pino... but first, let’s go back and see exactly what happened…</p><p>We'd planned to go to Wakayama, riding on the back of a passing low with winds from the NE, shifting to the S and then to the SW, but the wind decided to turn earlier making it impossible for us to go east. We found ourselves close-reaching in 40 knot winds, heading straight north. Looking at the weather we could see that it would blow from the W for 3-4 days, so we made a new plan to head to Omaezaki. We'd read of other sailors taking refuge there in big weather and thought it would be possible to go, but again, the wind kept pushing us further and further east. The next port on our list was Shimizu, tucked in deep into the bay. We were able to point Pino to the cape just past Shimizu, but we weren't sure if again the wind and current would allow us to make some easting.</p><p>At that point both of us were frozen solid. Wave after wave splashed over the boat and into the cockpit. The starboard rail was constantly submerged, our starboard side lee cloth was gone and the diesel bins were threatening to fall overboard. We had 3 reefs in our main, but 5 slides had snapped off (yet again), I wondered when the rest would break.</p><p><a href='https://100r.co/site/hello_fujisan.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>goji no chaimu</title>
-  <link>https://100r.co/site/goji_no_chaimu.html</link>
-  <guid isPermaLink='false'>goji_no_chaimu</guid>
-  <pubDate>Fri, 01 Mar 2019 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>After a long 21-day passage, seeing the shape of the island of <a href='https://www.noforeignland.com/home/map/place/5888907224809472/?sid=6547291309604864&tc=1557533713543' target='_blank' class='external'>Chichijima</a> in the distance was unreal; this was our prize, our first step onto Japanese soil. We used to make many trips to Japan by plane, but getting there by our own efforts — by sailboat — is a lot slower and harder. If we had stuck to our plan of sailing there via Hawaii, we would have been there sooner, but I’m glad we took the long route. We passed through 9 countries, learned a lot about the world and, through it all, we've surpassed ourselves.</p><p>During that time, we often talked about what it would be like to arrive in Japan, about what would happen when we did. You have to remember that this was a big deal for us, a milestone in our lives and the culmination of 3 years of hard work. A fantasy made real is a hell of an achievement. A part of me couldn’t believe we’d made it — anytime now I’d wake up mid-ocean in transit in the South Pacific. Even when I’d have my feet planted on the ground, with a Japanese flag flying above my head, I knew I’d be anxious, waiting for something horrible to happen that would rob us of our victory.</p><p>'They’ll turn us away.', 'We’ve landed on the wrong island.' or 'We died in the pacific some months ago, and this is limbo.'</p><p>My eyes were set on the phantasmic island ahead. The sun fell out of the sky then, drawing down a star-studded curtain; the wind blew itself out, leaving the sea to settle into an unmoving and creepy oil slick. <b>Limbo.</b></p><p>A bright circle appeared on the horizon then. It isn’t the first or the last time that I mistake the moonrise for a ship, or the bright eye of some mythological beast.</p><p>At this point, it looked like we’d be entering Futami port at night, but at least we had the eye of Sauron to light the way. The island in the distance stopped being a vague black patch, and we began to see details in it.<p><a href='https://100r.co/site/goji_no_chaimu.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>the promise of pancakes</title>
-  <link>https://100r.co/site/the_promise_of_pancakes.html</link>
-  <guid isPermaLink='false'>the_promise_of_pancakes</guid>
-  <pubDate>Mon, 26 Nov 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>As soon as we'd tied to our mooring ball in Majuro's lagoon, the worries of the previous 24 days had vanished only to replaced by the crushing weight of responsibility. Devine, being worry-free, wanted to have pancakes, sleep and check-in tomorrow, but Devine knows how uptight I am, and that this was not what we'd be doing first (even if it is what I wanted too *sigh*). My thinking was that I'd rather get the paperwork out of the way first, to get all of that worrying out of me so I can then eat pancakes in peace.</p><ul><li>'Shut up and get dressed.'</li></ul><p>We needed to be presentable for the officials, we had to wear clean clothes with pants that reach over your knees. A lot of countries in the pacific don't want to see your knees — I get it, knees are weird. We dug out some clothes from our bins, and then went back on deck to give Iggy the dinghy the kiss of life.</p><p><a href='https://100r.co/site/the_promise_of_pancakes.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>doldrumming</title>
-  <link>https://100r.co/site/doldrumming.html</link>
-  <guid isPermaLink='false'>doldrumming</guid>
-  <pubDate>Tue, 20 Nov 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Here we go again, time for another passage. We left Fiji on <b>October 23rd 2018</b>, eager to spend some time on the water again. Our plan, was to stop by Tuvalu, maybe Kiribati, before arriving in Majuro in the Marshall islands where we'd be spending two months before moving off west to Micronesia. We left, knowing that this was wasn't going to be an easy ride...</p><p>Two areas of calms lie north of Fiji: the SPCZ (south pacific convergence zone) and the ITCZ (intertropical convergence zone). If you look at <a href='http://windy.com' target='_blank' class='external'>windy</a>, hovering around the countries of <b>Tuvalu</b> and <b>Kiribati</b> are two bands of blue - blue means there is no wind. The size and location of these bands varies from day to day, week to week.. they phase in and out of existence with the weather and influence of the trade winds.</p><p>Sailors fear these blue bands because the weather there is difficult, not only do you suffer calms, but also a continuous ballet of squalls and thunderstorms. We've been through the doldrums (the ITCZ) once already when we crossed from Mexico to the Marquesas.</p><p><a href='https://100r.co/site/doldrumming.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>leleuvia</title>
-  <link>https://100r.co/site/leleuvia.html</link>
-  <guid isPermaLink='false'>leleuvia</guid>
-  <pubDate>Wed, 05 Sep 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>We've never been on a tiny island, a place you can run the width of under just a few minutes. We found a place like this, <b>Leleuvia</b>, an island in the Lomaitivi archipelago in Fiji.</p><p>This island went through many hands over the years, it now belongs to a resort that too bears the name of the island. We decided to make a stop there on our way to Suva, to wait for favorable winds to go south.</p><p>Also, we wanted a taste of tiny-island living.</p><p>We arrived at <b>Moturiki pass</b> around 1pm. SY Scoots gave us a number to phone the resort on arrival, so they could send a boat to guide us through the reef. We realized then, that our phone plan didn't include calls within Fiji, all we had was data — woops! That's ok! We still had the option of calling them on VHF. I hailed them repeatedly on CH10 — no luck.</p><p>I had waypoints for the entrance, but not all the way to the anchorage. Many areas in Fiji aren't charted well, you can find yourself navigating over an area with the depth sounder reading '10m' but the chart will display a patch of green, an area too shallow to pass. It's always disconcerting, to find yourself anchored in a patch of green, like sitting in a negative space, a secret place that you didn't think existed.</p><p>We got closer and closer to the green area, growing ever-so nervous, and continuing to try and hail the resort. Eventually, they picked up my call.</p><ul><li>'Vessel calling, this is Leleuvia resort.'</li><li>'This is sailing vessel Pino, d'you have any moorings available?'</li><li>'Yes. When you come near the pier we'll send a boat to escort you to it.'</li><li>'Great, thanks!'</li></ul><p>We wouldn't be entering the anchorage in the blind after all. We would have eyes to guide us to a safe spot.</p><p>We motored on, nearing the pier, and spotted the escort boat. The driver came within shouting range, instructing us to follow, which we promptly did. They led us to a mooring, and assured us it was strong and that it could take our weight — not that Pino is heavy. We grabbed the line from the water, with a bit of difficulty, sometimes the mooring 'eye' for the buoys are submerged, and you need to figure out which bit to grab to get to it. We missed the mooring ball the first time, the whole endeavour was made worse by the up and down motion of the bow — there was a bit of swell coming into the anchorage from the north at the time. We rounded again to grab the mooring ball, i spied a thin loop at the top of the ball, and thrusted the boat hook in it. I hurriedly pulled the float out of the water, and my hands and the line found the mooring loop. This is not my favorite type of mooring ball, where you need to pull the ball up itself to find the rope hanging far underneath it, usually they'll put a separate float on the line to keep it buoyant. All moorings are different.</p><p>The northerly swell would stop soon, the forecast called for 20-25kts out of the SE tomorrow. On the chart, the area looked protected from swell, with a reef belt around it, but looking around now, aside from the tiny spit of land that is Leleuvia, there was only water. At low tide the reef became evident, as the water receded sand banks came into view, fencing us in from all directions but from the North. Phew. The reef would break most of the waves, but at high tide some swell would make it past it for sure — not ideal, but we would have some protection.</p><p>The next day the wind did freshen, and as expected, at high tide the waves spilled into the anchorage. It was bumpy, but not overly so.</p><p><a href='https://100r.co/site/leleuvia.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>where is the turtle farm</title>
-  <link>https://100r.co/site/where_is_the_turtle_farm.html</link>
-  <guid isPermaLink='false'>where_is_the_turtle_farm</guid>
-  <pubDate>Mon, 20 Aug 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Pino spent a long time in <b>Savusavu</b>, but by then, we were growing tired of this scenery, not of the market, or of the company to be found here, but just of having that same view every morning. We love this city, but when it's time to go, it's time to go!</p><p>We left our mooring at 9am, and moved along over to <b>Cousteau's resort</b> to anchor (16 48.623S, 179 17.331E). The water was unclear, and the clouded sky made it difficult to see bommies beneath us. Devine dove in and checked out our anchor, which was set in sand, and we weren't near any huge coral that we could see, that is, unless the wind shifted - it was hard to see that far in cloudy water to be honest.</p><p>SV Privateer arrived shortly after us, having made the short passage by sail, we saw them manoeuver around, looking for a place to drop the hook.</p><ul><li>'What's the bottom like?' Lila shouted, baby Chance strapped to her back.</li><li>'Sand. A few bommies!' I shouted back.</li></ul><p>They hovered around some more, opening the headsail, furling it, in and out again, and moving the main in and out to make their way around the anchorage. It's always impressive to watch, not many will rely on wings alone to do this. They'll do as many tacks as necessary to get where they need to go - engines be damned!</p><p>We tried swimming at the beach that afternoon, but it was full of seaweed and unclear, we much preferred staying on the tiny slab of beach lining the shore to watch the hundreds of tiny hermit crabs moving about. They were different sizes, wearing a grand variety of shells - some spirally, others conical, stained with purples and whites, oranges and cream. We sat there in silence, listening to the sound of their shells rubbing against bits of broken coral. Such a pleasant sound, small scratching noises. Crkk, crkk... crkk.</p><ul><li>'Move along little ones - move along now! Tide's rising!'</li></ul><p>We left our hermit crab friends behind, and went back aboard Pino. Tomorrow morning we had to get up at 4am to sail to Makogai (pronounced ma-kon-guy), 49NM away.</p><p>The wind changed in the night, we could hear the chain rubbing against bit of coral, catching, before coming off again with a jerk, the sound traveling to us by the chain through the hull. We should have probably buoyed the chain, we thought then, but it was dark, and too late to think of doing this now. Hopefully, the chain wouldn't have this macramé thing going on with the bits of coral down there.</p><p><a href='https://100r.co/site/where_is_the_turtle_farm.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>projects and pain</title>
-  <link>https://100r.co/site/projects_and_pain.html</link>
-  <guid isPermaLink='false'>projects_and_pain</guid>
-  <pubDate>Sat, 02 Jun 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>We arrived in New Zealand with a long scary list of things to fix or replace on Pino. We needed new batteries, a new mainsail, a fresh coat of bottom-paint, galley plumbing, new intermediates shrouds, new backstay, new top hatch, new windows, new control cables etc.</p><ul><li>'If we can't finish all of these projects, then we can't leave.'</li></ul><p>That was the deal. There was too much ocean between us and Japan. Our vessel needed to be made safe to endure it, and to ensure our safe passage.</p><p>When we landed in the country, we had grand ideas, 'grand illusions' I should say, about what we thought we could get done by ourselves. We wanted to learn, but we also wanted to save money. By now, we knew how much it cost to offload the work to others, and it's not something we knew we could do.</p><p>Below, is a detailed account of all the repairs we did on Pino during the 9 months we spent in New Zealand. This is a technical post, interspersed with bits of story, present and past. For those who don't know the terms, but that are interested, I'll do my best to explain them all throughout the text.</p><p>Here I go!</p><p><a href='https://100r.co/site/projects_and_pain.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>an island to oneself</title>
-  <link>https://100r.co/site/an_island_to_oneself.html</link>
-  <guid isPermaLink='false'>an_island_to_oneself</guid>
-  <pubDate>Fri, 01 Jun 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>Traveling to <b>New Zealand</b>, after a year of unknown, was a great comfort to us. There are a few things Devine and I were really looking forward to, like a good latte, craft beer, a fresh food market and a bulk food store. I found a city that checked all of the boxes.</p><p>Many of the cruisers we know want to arrive in <b>Opua</b> – with reason. It's warm, damn gorgeous, and you know you'll find friends there, because that's where everyone goes during the cyclone season. Arriving in a strange place, with familiar faces, always makes the experience better, but knowing this, we still chose <b>Whangarei</b>.</p><p>I first pronounced Whangarei as 'one-gah-rey', but the proper way to say it is: 'fah-ngah-rey'. A friend corrected me early on, sparing me the embarrassment of mispronouncing it aloud in public. I know that no one would think me a fool for making a mistake like this, but I do like learning the correct way to say things.</p><p>Why did we choose to go there? Because staying in the Whangarei Town Basin is inexpensive, convenient, with everything just a short walk away. We'd also read that it was a good place for boat projects, and since Pino needed a lot of attention, this too, we thought, tipped the scale in its favor. We also noted that it was close to <b>Auckland</b> — well, it looked closer on a map. We became very familiar with that stretch of land, and of the actual distance between the two places during the 8 months we spent there.</p><p>The first thing we did when we arrived, was to replenish our store of dried goods at Bin Inn, a really great bulk food store. The second thing, was purchasing a home brew kit - priorities amirite? The third thing, was to get a latte.</p><p>I'll never forget the look on Devine's face after taking a sip of a cup of freshly brewed beans, a delicious pool of dark liquid topped with a pillowy cloud of plant milk.</p><p>Joy incarnate.</p><p><a href='https://100r.co/site/an_island_to_oneself.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>captain what is this</title>
-  <link>https://100r.co/site/captain_what_is_this.html</link>
-  <guid isPermaLink='false'>captain_what_is_this</guid>
-  <pubDate>Tue, 12 Jun 2018 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p>After 15 days on the water, we were to get into port. It was the 27th of June, and we'd left Opua on the 12th. We hove-to for the night, waiting for sunrise before entering <a href='https://en.wikipedia.org/wiki/Savusavu' target='_blank' class='external'>Savusavu bay</a>. 'Entering a strange harbor at night is for morons and fools,' people told us. We didn't listen right away, but they were right. In this particular case, there was no point in arriving early, considering yachts cannot anchor in Fiji waters before checking in, and that check-in is only possible after 8am.</p><p>At dawn, we pointed towards the island of Vanua Levu and sailed on, with the wind at our backs. I went below to make some coffee, as both of us needed a boost. Devine was in the cockpit, keeping an eye on a large storm cloud ahead. The wind increased as we neared it, but it did not trouble us long. We made our way inside the reef, which offered some protection from the building swells, and moved closer to land. We could see rows of hills ahead, and caught the perfume of greenery. After that, came a sure sign of civilization: buildings, low, with green and red roofs. As we got nearer, came an even more obvious sign of civilization: cars, and small power boats. We'd arrived.</p><p>We neared the entrance to Nakama creek around 9am, and radio'ed the authorities on channel 16.</p><p>I hailed them 3 times, no answer. We slowed down, awaiting a reply. The commercial wharf lay ahead, we could see boats on moorings, some abandoned, others belonging to people we'd seen or met accross the Pacific. Eventually, they replied and asked us about the details of our trip, and if we had sent a pre-arrival notice. Sending it ahead of time was mandatory, and was about 10 pages too long. I'd sent it to the proper people by email, although half of the messages bounced back, and other cruisers reported the same thing happening. With the document being so large, it's no wonder their inboxes are always full. I even tried sending it again while underway, no luck. No matter. I'd received a reply from the custom office, at least one of the messages made it. They told us to look for a white building on our starboard side.</p><p><a href='https://100r.co/site/captain_what_is_this.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>the rock of polynesia</title>
-  <link>https://100r.co/site/the_rock_of_polynesia.html</link>
-  <guid isPermaLink='false'>the_rock_of_polynesia</guid>
-  <pubDate>Sat, 29 Jul 2017 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p><b>Niue</b>, pronounced 'New-ay', a rock in the Pacific, one of the largest coral islands on earth. It's the first country to offer free, state-funded, wireless internet to all its residents and has a goal of being completely <a href='https://en.wikipedia.org/wiki/Niue' target='_blank' class='external'>solar powered</a> — uuuh... wow?</p><p>We'd also heard that the school gave all of the kids laptops, this, with free internet, makes it a paradise for people like us. Already then, we made plans to move there — like all places in the tropics with a good connection and supply of coconuts and beer. I remember when we were speaking of staying in <b>Nuku Hiva</b> too, and in La Paz. We make a home everywhere we go. This, makes it hard to leave, but this ease of adaptation also makes us eager to go forward, to see where else we could live. This is what we do, we set up house in different places, sometimes for 8 months at a time.</p><p>We weren't going to be staying long in Niue though, but not by choice.</p><p>Alofi Bay, the only anchorage on the island, is not protected in any wind other than east. If the wind turns in an unfavorable direction, staying could be dangerous and we'd be forced to leave.</p><p>One other troublesome thing about the 'rock of Polynesia', is that they hiked the departure fees from 35$ to 80$ per person. Anyone who enters Niue, when leaving, need pay this fee. That's a lot of money, we thought, to visit a place so small.</p><p>In the end I'm glad we went, because of all the places we'd been, Niue was our favorite.</p><p>We arrived at 6am in the morning, rounding the island to Alofi bay that lay on the west side. A squall lay between me and the anchorage, a puffy cloud with a thick wet skirt. I pulled my hood on, grabbed the helm firmly and quickly skipped through songs on my phone till I landed on anything by Purity ring. Ah! Sea castles. Yes, perfect.</p><p>WOOSH! A gust of wind comes, but I'm ready. The song begins then too... <i>'I could build a machine—'</i> The boat heels, <i>'—draw pictures for the walls.'</i> Then comes the rain, heavy droplets, washing the salt crystals away. It left as quickly as it came, giving way to the sun, its face reflected in a thousand wet pools on the deck. <i>'Hang up all my fragile frights—'</i> I point Pino towards the anchorage. Tall masts ahead, signs of life. The water, a deep blue, spotted with brightly-colored floaters. <i>'—Display that you may see.'</i> I sing aloud, turning the music off. 'We're here!' I shout to Devine.</p><p><a href='https://100r.co/site/the_rock_of_polynesia.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>internet in paradise</title>
-  <link>https://100r.co/site/internet_in_paradise.html</link>
-  <guid isPermaLink='false'>internet_in_paradise</guid>
-  <pubDate>Sat, 01 Jul 2017 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p><b>Huahine</b>, one of the many grouped islands in <a href='https://en.wikipedia.org/wiki/French_Polynesia' target='_blank' class='external'>French Polynesia</a>. Our plans for future ocean voyaging could have ended here, because we almost crashed onto a reef.</p><p>Because we always time our arrival with the morning sun, I always get the first look of every island. Huahine stood in front of us, a series of volcanic peaks marked by deep valleys and blanketed in green, an island that came into being million of years ago.</p><p>We were heading for Baie d'Avea, to the south of the island.</p><p><a href='https://100r.co/site/internet_in_paradise.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-<item>
-  <title>rainy with a chance of mosquitoes</title>
-  <link>https://100r.co/site/rainy_with_a_chance_of_mosquitoes.html</link>
-  <guid isPermaLink='false'>rainy_with_a_chance_of_mosquitoes</guid>
-  <pubDate>Sat, 01 Apr 2017 00:00:00 GMT</pubDate>
-  <dc:creator><![CDATA[Rekka Bellum]]></dc:creator>
-  <description>
-<![CDATA[<p><b>Nuku Hiva</b>, a green mountainous island in the Pacific, straight out of Jurassic Park. Just as foreign and just as wild, except instead of hungry lizards there are mosquitoes, also known as the vampires of the Marquesas.</p><p>Before arriving, we didn't know what it was going to be like there, we'd barely read anything about it. We knew where we'd anchor, that people there spoke french and that there would be tropical fruit, but beyond that it was a blur, a black spot in our minds. We read the book <b>Fourteen</b> during our 28-day transit from La Paz. In this book, the family sailed to Nuku Hiva, but their experience there was not so good. It wasn't bad because of the Marquesans, or the island itself, but because of no-no's, little biting bugs that hide in sand. We took a mental note of this: "Avoid sand beaches, and you will have a great time!"</p><p>On day 27 of our voyage, I could see the outline of the island in the distance. I stood at the bow, trying to take footage of the event, but was disappointed with the shot. Far-away wonders have a way of looking unimpressive on camera. I was about to put the camera away, when I heard a 'wooshing' sound. I looked over the side, and saw an orca whale swimming next to Pino, its length matching our own. It stayed with us for a long while, it's white belly making it easy to spot it in the water. This unusual encounter was a great start to our Marquesian adventure.</p><p><a href='https://www.noforeignland.com/home/boat/4733784360484864/?sid=6547291309604864&tc=1557534132049' target='_blank' class='external'>Pino</a> arrived at the entrance to <a href='https://www.noforeignland.com/home/map/place/5690458764214272/?sid=6547291309604864&tc=1558533207558' target='_blank' class='external'>Taiohae bay</a>. I sat on the bow with Iggy's deflated corpse. I pumped life back into it, while it, sucked mine out. I was sweaty, a constant stream of body water oozing down my back. We had no dinghy pump, having broken it ages ago. All we had was a jury-rigged contraption using a bike pump, a bike tube and the hose from the old pump. It worked, but it took twice as long to put air into anything.</p><p>A super yacht was anchored in the mouth of the bay, called 'Ethereal'. "How fitting", I thought.</p><p>It's as if the yacht was a sign, a warning of the view to come — one, that was definitely ethereal.</p><p>A chain of mountains, green and fuzzy, and ahead a bay filled with boats flying flags from all over the world. We found a spot in 12 m of water, mud bottom, and dropped anchor. The sky was clear, but clouds clung to the peaks of every mountain. It was a rare thing, we realized afterwards, for the skies to be clear. Most days were grey. While grey often means rain, it also means less sun. It was over 30 degrees every day, so hot that at times we couldn't work, our bodies shiny with sweat, driving us mad. Mad to the point that we seriously considered flooding the cockpit with water to turn it into a pool.</p><p><a href='https://100r.co/site/rainy_with_a_chance_of_mosquitoes.html'>Continue Reading</a></p>]]>
-  </description>
-</item>
-</channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ten Digits</title>
+  <subtitle>A journal of notes I&#39;m taking along the way.</subtitle>
+  <link href="https://tendigits.space/feed.xml" rel="self"/>
+  <link href="https://tendigits.space/"/>
+  <updated>2021-03-17T00:00:00Z</updated>
+  <id>https://tendigits.space/</id>
+  <author>
+    <name>Nate Steiner</name>
+    <email>nate@natesteiner.com</email>
+  </author>
+  
+  <entry>
+    <title>Orca Box</title>
+    <link href="https://tendigits.space/projects/orca-box/"/>
+    <updated>2021-05-03T12:33:06Z</updated>
+    <id>https://tendigits.space/projects/orca-box/</id>
+    <content type="html">&lt;dl&gt;
+&lt;dt&gt;Status&lt;/dt&gt;
+&lt;dd&gt;Planning&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;The concept here is to create a physical UI with labeled buttons for controlling ORCA, running on a Raspberry Pi with midi out to multiple devices.
+I&#39;m researching what kind of buttons to use, how I&#39;ll label them, and what they will be mounted in. I&#39;m also considering how to design the housing for the device.&lt;/p&gt;
+&lt;p&gt;Some initial decisions that have been made, but all subject to change:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hyperpixel display hat on top of raspberry pi&lt;/li&gt;
+&lt;li&gt;1/2 globe of glass to magnify screen&lt;/li&gt;
+&lt;li&gt;grand central as &amp;quot;keyboard&amp;quot; control board for buttons&lt;/li&gt;
+&lt;li&gt;circuit python to map buttons to key press in grand central&lt;/li&gt;
+&lt;/ul&gt;
+&lt;dl&gt;
+&lt;dt&gt;Update&lt;/dt&gt;
+&lt;dd&gt;Mar 24th 2021&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;I&#39;m not entirely sure that Grand Central can act as a keyboard, but I believe with the &lt;a href=&quot;https://circuitpython.readthedocs.io/projects/hid/en/latest/index.html&quot;&gt;Adafruit HID Library&lt;/a&gt; it can.&lt;/p&gt;
+&lt;p&gt;I&#39;m also not sure how I&#39;ll do midi out. Ideally I can convert from USB from the Pi to a midi din port for the box, but I&#39;m not sure yet how to accomplish that.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Update&lt;/dt&gt;
+&lt;dd&gt;Mar 31st 2021&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;I mapped out an initial idea for button layout. This seems really un-optimized with 62 buttons, but that&#39;s actually how many GPIO the Grand Central has, so I suppose it&#39;s possible. I&#39;ll do some more thinking... I believe this is not the final layout.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tendigits.space/img/orcabox-button-layout-1.png&quot; alt=&quot;OrcaBox Layout 1&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Birdhouse Webcam</title>
+    <link href="https://tendigits.space/projects/birdhouse-cam/"/>
+    <updated>2021-05-03T12:33:06Z</updated>
+    <id>https://tendigits.space/projects/birdhouse-cam/</id>
+    <content type="html">&lt;dl&gt;
+&lt;dt&gt;Status&lt;/dt&gt;
+&lt;dd&gt;Completed v1, v2, v3&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Bluebirds are on the endangered species list, they have a lot of competition and dangers trying to survive in suburban landscapes. This project serves a few purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide a safe nesting house for Bluebirds&lt;/li&gt;
+&lt;li&gt;Educational value in being able to witness nest building, egg sitting, hatching and rearing processes&lt;/li&gt;
+&lt;li&gt;Easy way to care for birds and intervening against any predators&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Bird Posters</title>
+    <link href="https://tendigits.space/projects/bird-posters/"/>
+    <updated>2021-05-03T12:33:06Z</updated>
+    <id>https://tendigits.space/projects/bird-posters/</id>
+    <content type="html">&lt;dl&gt;
+&lt;dt&gt;Status&lt;/dt&gt;
+&lt;dd&gt;Completed&lt;/dd&gt;
+&lt;dt&gt;Finished&lt;/dt&gt;
+&lt;dd&gt;May 28th 2020&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Our neighborhood put on an Art Walk, where
+everyone was invited to display art in their yard,
+or do a performance. This is during the
+Covid-19 pandemic, so everyone was glad for a way
+to get out and have an experience in a way that left
+plenty of space for people to keep their distance.&lt;/p&gt;
+&lt;p&gt;Our street is part of a small group of new modern
+townhomes. As we are all relatively new to these
+homes, and they are tightly built together, we&#39;ve
+made a point to have good communication.&lt;/p&gt;
+&lt;p&gt;We decided our street should try to participate in
+the larger neighborhood effort in a big way. I offered
+to create &amp;quot;coloring book&amp;quot; style posters that everyone
+could fill in and decorate however they like. We
+chose the theme of bird species that are found here
+in the neighborhood.&lt;/p&gt;
+&lt;p&gt;I made about a dozen of these, here&#39;s how they looked
+prior to decoration:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.tendigits.space/img/bird-posters.jpg&quot; alt=&quot;Bird Posters&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And here&#39;s how they looked after decoration and hung outside
+on various balconies.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.tendigits.space/img/bird-posters-decorated.jpg&quot; alt=&quot;Bird Posters Decorated&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It was a very rewarding feeling to have started a project
+that the neighborhood felt inspired to be
+involved with.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>New Projects</title>
+    <link href="https://tendigits.space/notes/new-projects/"/>
+    <updated>2021-03-17T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/new-projects/</id>
+    <content type="html">&lt;p&gt;I&#39;ve been thinking through how to document projects on this site. There&#39;s lots of things happening at once, and I don&#39;t think random posts with tags is a good framework for documenting what&#39;s happening while it&#39;s happening.&lt;/p&gt;
+&lt;p&gt;So I&#39;ll make a new type of project page in here, updates can get appended to it instead of being separate pages. They can show a time-log style view as projects go from concept to sketches, to prototypes and then builds. I think it&#39;s also flexible enough to cover lots of project types.&lt;/p&gt;
+&lt;p&gt;Now I just need to decide how it should look in here.&lt;/p&gt;
+&lt;h2&gt;Currently and upcoming:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;building a 3d printer from kit&lt;/li&gt;
+&lt;li&gt;picture frames that play sounds&lt;/li&gt;
+&lt;li&gt;ORCA in a box&lt;/li&gt;
+&lt;li&gt;new dog bed sewing project&lt;/li&gt;
+&lt;li&gt;3D printed sculpture wall art&lt;/li&gt;
+&lt;li&gt;growing tomato from last year&#39;s seeds&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>House Maintenance</title>
+    <link href="https://tendigits.space/notes/house/"/>
+    <updated>2021-01-06T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/house/</id>
+    <content type="html">&lt;p&gt;My father-in-law is exceptionally good at maintenance and upkeep of the things he owns. In this way, he avoids having to buy replacement things, and unnecessary waste. In order to benefit from this wisdom, we asked him to share a list of the regular maintenance he does to upkeep his home. I&#39;m sharing a slightly re-worded version here for general reference.&lt;/p&gt;
+&lt;h2&gt;HVAC&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;change filters every 4-6 months (eyeball for time to change)&lt;/li&gt;
+&lt;li&gt;furnaces are &amp;quot;forever&amp;quot; so if you maintain them yourself, just keep the outside AC unit clean (hose the heat exchanger fins rigorously)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fridge&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;increasingly difficult to get to heat exchanger fins so: move the fridge every few years, vacuum floor behind it, then use leaf blower to blow out dust (turn-off fridge for this), then vacuum kitchen which will be full of dust.&lt;/li&gt;
+&lt;li&gt;&amp;quot;change filter&amp;quot; lights come on every six months. Don&#39;t bother with the air filter but change water filter at 12-18 months&lt;/li&gt;
+&lt;li&gt;clean the freezer by emptying it and vacuuming the crumbs, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Disposal&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;clean the inside every few months, you will want to toss the rag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dryer&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;every few years, vacuum whatever you reach behind the filter using an attachment called Lint Lizard to attach a small diameter hose to the vacuum hose&lt;/li&gt;
+&lt;li&gt;depending on the routing, have vent pipe cleaned every 5-10 years (5 if you can do it yourself, 10 otherwise)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bathroom&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;sinks and (especially) shower drains, run a device called Zip-It to get out hair, etc. once or twice a year&lt;/li&gt;
+&lt;li&gt;use full strength laundry bleach to control mildew (just be careful)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Water heater&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;you are told to drain some water once or twice a year&lt;/li&gt;
+&lt;li&gt;keep it at 110 degrees (to save energy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Garage&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;use garage spring spray lubricant to grease the roller axles and the big spring every year or two&lt;/li&gt;
+&lt;li&gt;insulate the garage door (they sell kits at Home depot, etc) if under living space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Autos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;oil and filter depends on your driving. Don&#39;t get it changed if the oil on the dip-stick is still clean, you may be able to go a year or more&lt;/li&gt;
+&lt;li&gt;air filter every 30,000, cabin filter every 60,000&lt;/li&gt;
+&lt;li&gt;tire pressure (especially as winter arrives) every month or two.  rotate every 8-10,000 miles.&lt;/li&gt;
+&lt;li&gt;fluids (including distilled water for battery) every 3 months&lt;/li&gt;
+&lt;li&gt;for crazy people only! drain and refill the brake master cylinder when the fluid is dark.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Unpainted outside wood&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;treat decks, pergolas, etc with a good preservative every 2-3 years&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Inktober</title>
+    <link href="https://tendigits.space/notes/inktober/"/>
+    <updated>2020-10-01T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/inktober/</id>
+    <content type="html">&lt;p&gt;For this year&#39;s Inktober I&#39;m planning to do brush ink drawings.  I&#39;ll use these drawings
+scaled down as sprites in a game I&#39;m working on for the PlayDate platform. This will be my
+first attempt at game development, so I&#39;m keeping it very simple and I&#39;m still deciding about
+gameplay ideas.&lt;/p&gt;
+&lt;p&gt;The general idea is that you can play as 4 different animals, in 4 different scenes, moving
+your character around to try to optimize an outcome. Inktober seems like a great time to generate
+graphics for these different scenes, so I&#39;m not following the official prompts.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the subject matter plan:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Octo&lt;/li&gt;
+&lt;li&gt;Shark&lt;/li&gt;
+&lt;li&gt;Hawk&lt;/li&gt;
+&lt;li&gt;Owl&lt;/li&gt;
+&lt;li&gt;Wolf&lt;/li&gt;
+&lt;li&gt;Bear&lt;/li&gt;
+&lt;li&gt;Frog&lt;/li&gt;
+&lt;li&gt;Snake&lt;/li&gt;
+&lt;li&gt;Urchin 1&lt;/li&gt;
+&lt;li&gt;Urchin 2&lt;/li&gt;
+&lt;li&gt;Coral 1&lt;/li&gt;
+&lt;li&gt;Coral 2&lt;/li&gt;
+&lt;li&gt;Seashell 1&lt;/li&gt;
+&lt;li&gt;Seashell 2&lt;/li&gt;
+&lt;li&gt;Rock 1&lt;/li&gt;
+&lt;li&gt;Rock 2&lt;/li&gt;
+&lt;li&gt;Ocean floor&lt;/li&gt;
+&lt;li&gt;Cloud 1&lt;/li&gt;
+&lt;li&gt;Cloud 2&lt;/li&gt;
+&lt;li&gt;Cloud 3&lt;/li&gt;
+&lt;li&gt;Grassland 1&lt;/li&gt;
+&lt;li&gt;Grassland 2&lt;/li&gt;
+&lt;li&gt;Water&lt;/li&gt;
+&lt;li&gt;Shore&lt;/li&gt;
+&lt;li&gt;Rat 1&lt;/li&gt;
+&lt;li&gt;Rat 2&lt;/li&gt;
+&lt;li&gt;Bull&lt;/li&gt;
+&lt;li&gt;Tree 1&lt;/li&gt;
+&lt;li&gt;Tree 2&lt;/li&gt;
+&lt;li&gt;Insect 1&lt;/li&gt;
+&lt;li&gt;Insect 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&#39;ll be posting these to Mastodon. Hopefully all goes well and I&#39;ll have a retrospective to post here at the end.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://tendigits.space/img/inktober-playdate.jpg&quot; alt=&quot;Octo drawing on PlayDate&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Post Receive Hook</title>
+    <link href="https://tendigits.space/notes/post-receive-hook/"/>
+    <updated>2020-09-27T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/post-receive-hook/</id>
+    <content type="html">&lt;p&gt;I&#39;ve been using git for years, but somehow never got into using
+hooks. In order to make updating this website smoother, I&#39;m trying
+out a very simple hook script which executes on the server
+after I commit to it. After getting my local ssh configuration updated
+so that I didn&#39;t have to manually log in each time, the next step was
+figuring out how to commit directly into the server. This was done by
+adding a &amp;quot;remote&amp;quot; which is an SSH user@address with full path to the
+repo on the server.&lt;/p&gt;
+&lt;p&gt;With this additional remote, I now push into the main repo for storage
+and then to this new remote when I want to update the site.&lt;/p&gt;
+&lt;p&gt;On the server, the .git/hooks/post-receive script is waiting and will
+run:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token shebang important&quot;&gt;#!/bin/sh&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; start&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because I&#39;m using 11ty, this triggers a rebuild of the static files. But
+this script could do whatever you need to build your site.&lt;/p&gt;
+&lt;p&gt;Although this is a very simple solution, it took me a lot of false
+starts and wrong ideas before I finally landed here.&lt;/p&gt;
+&lt;p&gt;Notes for future reference:&lt;/p&gt;
+&lt;h2&gt;On the server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When you setup your web server, install git&lt;/li&gt;
+&lt;li&gt;Clone your repo onto the server&lt;/li&gt;
+&lt;li&gt;Configure nginx or whatever server to point your site from the repo (where ever it builds final files to)&lt;/li&gt;
+&lt;li&gt;Add Lets Encrypt or other SSL&lt;/li&gt;
+&lt;li&gt;Add a bash script to do whatever build command you need in the git folder of your repo at &lt;code&gt;.git/hooks/post-receive&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;git config --global receive.denyCurrentBranch updateInstead&lt;/code&gt; so you don&#39;t get an error committing into a non-bare repo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;On your local&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid the login prompt by &lt;a href=&quot;https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent&quot;&gt;adding your SSH key to the SSH Agent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add a remote to the server &lt;code&gt;git remote add deploy ssh://&amp;lt;your-name&amp;gt;@&amp;lt;your-ip&amp;gt;/path/to/your/repo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;run &lt;code&gt;git push deploy branchName&lt;/code&gt; when you want to update the site&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Bagels</title>
+    <link href="https://tendigits.space/notes/bagels/"/>
+    <updated>2020-09-26T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/bagels/</id>
+    <content type="html">&lt;p&gt;I started making these at home this year and was
+surprised how good the results were. The key seems to
+be about getting the right kind of flour and diastatic malt powder.&lt;/p&gt;
+&lt;h2&gt;The flour&lt;/h2&gt;
+&lt;p&gt;The recipe I&#39;m referencing calls for &amp;quot;High-gluten flour&amp;quot; however
+I chose a product called &amp;quot;Super Bagel Flour&amp;quot; from Baker&#39;s Authority,
+which includes other ingredients like malted barley flour.&lt;/p&gt;
+&lt;h2&gt;Diastatic malt powder&lt;/h2&gt;
+&lt;p&gt;This is used in the dough, but I also make slurry of it to add to the
+boiling water.&lt;/p&gt;
+&lt;h2&gt;The process&lt;/h2&gt;
+&lt;p&gt;This process includes an overnight chill in the fridge, so it&#39;s in two parts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make the dough, rest it, shape it, put in fridge&lt;/li&gt;
+&lt;li&gt;Boil in water, add toppings, bake&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;These are not required, you can always improvise, but I&#39;m using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stand mixer for mixing/kneading dough&lt;/li&gt;
+&lt;li&gt;Large &amp;quot;pizza&amp;quot; stone for oven&lt;/li&gt;
+&lt;li&gt;Very large pot for boiling multiple bagels at a time&lt;/li&gt;
+&lt;li&gt;Scale for weighing flour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Ingredients&lt;/h2&gt;
+&lt;p&gt;This makes 1 dozen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;680 grams of high gluten flour&lt;/li&gt;
+&lt;li&gt;2 tsp table salt&lt;/li&gt;
+&lt;li&gt;3/4 tsp instant yeast&lt;/li&gt;
+&lt;li&gt;1 Tbs Diastatic yeast powder&lt;/li&gt;
+&lt;li&gt;1 1/2 cup + 1 Tbs warm water&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Instructions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dissolve the malt and yeast in water, stir and let sit 5 mins to activate.&lt;/li&gt;
+&lt;li&gt;Blend flour and salt&lt;/li&gt;
+&lt;li&gt;Add water and blend/knead for 10 mins until the dough is smooth and stretchy&lt;/li&gt;
+&lt;li&gt;Roll into two 2&amp;quot; logs, cover and let rest for 20 mins&lt;/li&gt;
+&lt;li&gt;Cut into 12 equal parts, stretch it around you fingers and roll into bagel shape. Search online videos for technique demonstrated by experts.&lt;/li&gt;
+&lt;li&gt;Put bagels on tray, cover and refrigerate overnight.&lt;/li&gt;
+&lt;li&gt;Mix 2 Tbs malt powder with 2 Tbs water to make a slurry&lt;/li&gt;
+&lt;li&gt;Boil large pot of water, add the slurry to it, and also preheat oven to 460°F&lt;/li&gt;
+&lt;li&gt;Boil the bagels in batches that fit the pot you&#39;re using until they float. Drain and add toppings if you like.&lt;/li&gt;
+&lt;li&gt;Bake 15-18 mins, let cool for 30.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Updating SSL Certs</title>
+    <link href="https://tendigits.space/notes/updating-ssh/"/>
+    <updated>2020-08-25T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/updating-ssh/</id>
+    <content type="html">&lt;p&gt;At some point soon I should sort out how to clean up the unused site folders on
+my little Raspberry Pi server, and configure a chron tab to auto-update the SSL certs.&lt;/p&gt;
+&lt;p&gt;But for now, it&#39;s not automated, and by the time the certs expire, I only sort
+of vaugely remember what I did to update them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH into the server (how to do this is saved in your Pass store)&lt;/li&gt;
+&lt;li&gt;Run certbot-auto&lt;/li&gt;
+&lt;li&gt;Wait a looooong time for it to get started&lt;/li&gt;
+&lt;li&gt;Follow the prompts&lt;/li&gt;
+&lt;li&gt;Done!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&#39;s not really much to it, but since I only have to do this once every
+few months, it&#39;s nice to have a reminder of what to do.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>New Linux for an old iMac</title>
+    <link href="https://tendigits.space/notes/imac-with-linux/"/>
+    <updated>2020-06-17T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/imac-with-linux/</id>
+    <content type="html">&lt;p&gt;Getting Linux on this old iMac was a bit of a bear, but I&#39;ve learned some things in the process, I&#39;ll share them here for anyone who might be trying to do the same thing and/or myself in the future.&lt;/p&gt;
+&lt;p&gt;Some general points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Macs (iMac or otherwise) from different years can be &lt;em&gt;much&lt;/em&gt; simpler to setup with Linux, compatibility problems are not consistent. This info is specific to &lt;a href=&quot;https://everymac.com/systems/apple/imac/specs/imac-core-i3-3.06-21-inch-aluminum-mid-2010-specs.html&quot;&gt;my iMac model (mid-2010)&lt;/a&gt; but may be useful for other models.&lt;/li&gt;
+&lt;li&gt;Ubuntu and Elementary (an offshoot OS) have a lot of built-in support for Mac hardware&lt;/li&gt;
+&lt;li&gt;My issue was having to do with the boot up process, iMac&#39;s non-standard UEFI (so much for the U) and understanding how to work with Grub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below is a compiled transcript of what I did in a general sense. In reality I ended up giving up with installing just Elementary, and changed tactics to see if Ubuntu would be simpler. I ended up getting the boot process working with Ubuntu, however if I was starting over, I believe I could have done the same with Elementary. In the end, I decided to keep Ubuntu because Elementary allowed me to adjust the partition with an easy to use GUI so I could run them both. If you&#39;re trying to get just Elementary running, I don&#39;t think you&#39;d need to do this.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the transcript:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You&#39;ll want a USB flash drive, and wired USB keyboard and mouse.&lt;/li&gt;
+&lt;li&gt;Setup flash drive with ISO for installer, using Balena Etcher for example&lt;/li&gt;
+&lt;li&gt;Put flash drive in the Mac&lt;/li&gt;
+&lt;li&gt;Boot Mac holding &amp;quot;Alt&amp;quot; to get EFI boot picker, pick the flash drive (if two show up, either one works).&lt;/li&gt;
+&lt;li&gt;As you see the boot screen, press an arrow key to stop the timeout&lt;/li&gt;
+&lt;li&gt;Press &#39;e&#39; to enter grub&#39;s option mode&lt;/li&gt;
+&lt;li&gt;Add the word &#39;nomodeset&#39; at end of the line that has the word &amp;quot;splash&amp;quot;&lt;/li&gt;
+&lt;li&gt;F10 or CTRL-x to boot&lt;/li&gt;
+&lt;li&gt;Pick &amp;quot;Install Elementary&amp;quot; and follow the prompts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After this, I&#39;m prompted to remove the flash drive to restart, but it boots into a black screen. So we repeat the process, but this time we pick &amp;quot;Try Elementary&amp;quot; so we can get into a working OS (running off the flash drive). Then we&#39;ll do our boot modifications to the main install from this temporary one.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shut down computer&lt;/li&gt;
+&lt;li&gt;Put the flash drive back in and power it up&lt;/li&gt;
+&lt;li&gt;During boot up hold &amp;quot;Alt&amp;quot; to get EFI boot picker, pick the flash drive (if two show up, either one works).&lt;/li&gt;
+&lt;li&gt;As you see the boot screen, press an arrow key to stop the timeout&lt;/li&gt;
+&lt;li&gt;Press &#39;e&#39; to enter grub&#39;s option mode&lt;/li&gt;
+&lt;li&gt;Add the word &#39;nomodeset&#39; at end of the line that has the word &amp;quot;splash&amp;quot;&lt;/li&gt;
+&lt;li&gt;F10 or CTRL-x to boot&lt;/li&gt;
+&lt;li&gt;Pick &amp;quot;Try Elementary&amp;quot; this time, to boot into the live USB OS&lt;/li&gt;
+&lt;li&gt;Open terminal from applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -i  &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to work as root user&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;fdisk&lt;/span&gt; -l&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to see what the drives are, find the one who&#39;s size is measured in Gigabytes (e.g. /dev/sda2). Now we are going to mount that main drive and associated OS folders so we can apply changes.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;mount&lt;/span&gt; /dev/sda2 /mnt/&lt;br /&gt;	&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token for-or-select variable&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; /dev /dev/pts /proc /sys /run&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mount&lt;/span&gt; -B &lt;span class=&quot;token variable&quot;&gt;$i&lt;/span&gt; /mnt&lt;span class=&quot;token variable&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;br /&gt;	&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; /mnt&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we chroot to emulate like we are operating in the main OS drive.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;chroot&lt;/span&gt; /mnt&lt;br /&gt;	pico /etc/default/grub  &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to edit the grub file, add &#39;nomodeset&#39; after &amp;quot;splash&amp;quot;&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	CTRL-X &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to exit, choose &amp;quot;y&amp;quot; to save when prompted. Next we run &amp;quot;update-grub&amp;quot; so the
+changes will stick.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;update-grub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Restart computer. You may be done now, but if you&#39;re thrown into grub prompt, then:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;ls&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to see the drives e.g. (hd0) (hd0, gpt2), (hd1)... or something like that&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hd0&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to see what type of drive it is, look for the super large ext* one. Note &amp;quot;(hd0, gpt2)&amp;quot;
+is a fake example name.&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;boot&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hd0, gpt2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;	&lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hd0, gpt2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;/boot/grub&lt;br /&gt;	insmod normal&lt;br /&gt;	normal&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This should get you booted in. Then open terminal and&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;	&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -i&lt;br /&gt;	grub-install /dev/sda2&lt;br /&gt;	&lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; udpate&lt;br /&gt;	&lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; upgrade&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you should be able to shut down and restart as needed.&lt;/p&gt;
+&lt;p&gt;The above is a pseudo transcript of what I (sort of) did. If you have updates or additional info you think should be added, let me know and I&#39;ll add notes.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>AE Modular</title>
+    <link href="https://tendigits.space/notes/ae-modular/"/>
+    <updated>2020-05-31T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/ae-modular/</id>
+    <content type="html">&lt;h2&gt;AE Modular&lt;/h2&gt;
+&lt;p&gt;AE Modular is a product line of modular synths from Tangible Waves. It differs from Eurorack by using
+standardized parts that reduce the overall cost. This is my first synth device besides 2 pocket operators.&lt;/p&gt;
+&lt;h2&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/nate/albums/72157714503963138/with/49949375368/&quot;&gt;The kit arrived&lt;/a&gt;
+completely assembled and with a helpful getting started pamphlet.&lt;/p&gt;
+&lt;h2&gt;Modules&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Info on each module here soon&lt;/em&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>This website&#39;s setup with 11ty</title>
+    <link href="https://tendigits.space/notes/site-11ty-setup/"/>
+    <updated>2020-05-30T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/site-11ty-setup/</id>
+    <content type="html">&lt;p&gt;This website is static HTML with a little CSS as a treat. There&#39;s no Javascript in use here
+(at least at the moment). This site is built using &lt;a href=&quot;https://11ty.io/&quot;&gt;11ty&lt;/a&gt;, a static site
+generator that runs on JS/Node/Webpack.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been using 11ty since shortly after it was introduced, there are a few things I like about it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is designed to do as little as possible&lt;/li&gt;
+&lt;li&gt;None of it&#39;s code needs to show up in the websites you produce with it&lt;/li&gt;
+&lt;li&gt;It doesn&#39;t require you to structure your site in a specific way&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&#39;s take a look at the config file, this is the entire thing:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; pluginRss &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;@11ty/eleventy-plugin-rss&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; syntaxHighlight &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;@11ty/eleventy-plugin-syntaxhighlight&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; moment &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;moment&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;eleventyConfig&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  eleventyConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pluginRss&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  eleventyConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;syntaxHighlight&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  eleventyConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addPassthroughCopy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;img&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  eleventyConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addPassthroughCopy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;assets&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  eleventyConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addNunjucksFilter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;nicedate&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;  moment&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;utc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;MMM Do YYYY&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  eleventyConfig&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addCollection&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;tagList&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;./_11ty/getTagList&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;    &lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    dir&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;      includes&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;_includes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;      layouts&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;_layouts&quot;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Reading down the code, here&#39;s how it works. A couple plugins and a library is loaded in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RSS plugin generates the site&#39;s RSS file with a simple template&lt;/li&gt;
+&lt;li&gt;Syntax highlight brings Prism into use to generate styled code blocks (like above)&lt;/li&gt;
+&lt;li&gt;Moment lib is used to translate date stamps into nicer to read dates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then the main export supplies the config options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding RSS and Syntax plugins&lt;/li&gt;
+&lt;li&gt;Allow &amp;quot;img&amp;quot; and &amp;quot;assets&amp;quot; folders to just get copied into the site (don&#39;t try to process)&lt;/li&gt;
+&lt;li&gt;Add a custom filter so in the Nunjuck templates I can just say:&lt;/li&gt;
+&lt;li&gt;Generate the list of tags&lt;/li&gt;
+&lt;li&gt;Specify which folders are used for includes and layouts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s all that I need to run 11ty. When I&#39;m writing content I use the &amp;quot;serve&amp;quot; command to preview
+changes locally. When I&#39;m done, the server runs a the &amp;quot;build&amp;quot; command generate the updated pages.&lt;/p&gt;
+&lt;p&gt;If you&#39;re interested in cloning to use my site as a starting point, or just reading more of the code,
+you can find the git repo at &lt;a href=&quot;https://git.sr.ht/~tendigits/tendigits.space&quot;&gt;https://git.sr.ht/~tendigits/tendigits.space&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Setting up this website</title>
+    <link href="https://tendigits.space/notes/hello/"/>
+    <updated>2020-05-20T00:00:00Z</updated>
+    <id>https://tendigits.space/notes/hello/</id>
+    <content type="html">&lt;h2&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;If you&#39;re seeing this, then I must have done something right.&lt;/p&gt;
+&lt;h2&gt;Hosting&lt;/h2&gt;
+&lt;p&gt;I decided to go with self-hosting. There are a few reasons for this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I already have some static IPs from my ISP&lt;/li&gt;
+&lt;li&gt;This website is simple enough that I can run it off a Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Avoid another service cost&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&#39;m using nginx for the server, and Let&#39;s Encrypt to take care of the security certificates.&lt;/p&gt;
+&lt;h2&gt;The Build&lt;/h2&gt;
+&lt;p&gt;I&#39;m using &lt;a href=&quot;https://11ty.io/&quot;&gt;11ty&lt;/a&gt;, a static site generator. 11ty is built out of JS and requires Node
+and a few dependencies, but none of that shows up in the output, which can be just HTML/CSS as I&#39;m doing
+here. Eventually I may create my own static site builder, but I didn&#39;t want to hold up working on this
+website for that.&lt;/p&gt;
+&lt;h2&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;I have node and git setup on the Raspberry Pi server. I have a shell script which uses SSH to access the
+server, does a git pull to get the latest updates and run 11ty&#39;s build.&lt;/p&gt;
+&lt;p&gt;11ty&#39;s build updates a &amp;quot;_site&amp;quot; folder which is what nginx is mapped to use as the site root.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

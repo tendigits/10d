@@ -1,0 +1,71 @@
+<header>
+    <p class="pretitle"></p>
+    <h1>New Linux for an old iMac</h1>
+    <p class="posttitle"></p>
+</header>
+<main>
+    <h2>Update</h2>
+    <p>I found someone to donate the Linux-powered iMac to! It was worth the effort to see this computer avoid the scrap heap and get some more utility</p>
+    
+    <h2>The Situation</h2>
+    <p>Getting Linux on this old iMac was a bit of a bear, but I've learned some things in the process, I'll share them here for anyone who might be trying to do the same thing and/or myself in the future.</p>
+    <p>Some general points:</p>
+    <ul>
+    <li>Macs (iMac or otherwise) from different years can be <em>much</em> simpler to setup with Linux, compatibility problems are not consistent. This info is specific to <a href="https://everymac.com/systems/apple/imac/specs/imac-core-i3-3.06-21-inch-aluminum-mid-2010-specs.html">my iMac model (mid-2010)</a> but may be useful for other models.</li>
+    <li>Ubuntu and Elementary (an offshoot OS) have a lot of built-in support for Mac hardware</li>
+    <li>My issue was having to do with the boot up process, iMac's non-standard UEFI (so much for the U) and understanding how to work with Grub.</li>
+    </ul>
+    <p>Below is a compiled transcript of what I did in a general sense. In reality I ended up giving up with installing just Elementary, and changed tactics to see if Ubuntu would be simpler. I ended up getting the boot process working with Ubuntu, however if I was starting over, I believe I could have done the same with Elementary. In the end, I decided to keep Ubuntu because Elementary allowed me to adjust the partition with an easy to use GUI so I could run them both. If you're trying to get just Elementary running, I don't think you'd need to do this.</p>
+    <p>Here's the transcript:</p>
+    <ul>
+    <li>You'll want a USB flash drive, and wired USB keyboard and mouse.</li>
+    <li>Setup flash drive with ISO for installer, using Balena Etcher for example</li>
+    <li>Put flash drive in the Mac</li>
+    <li>Boot Mac holding &quot;Alt&quot; to get EFI boot picker, pick the flash drive (if two show up, either one works).</li>
+    <li>As you see the boot screen, press an arrow key to stop the timeout</li>
+    <li>Press 'e' to enter grub's option mode</li>
+    <li>Add the word 'nomodeset' at end of the line that has the word &quot;splash&quot;</li>
+    <li>F10 or CTRL-x to boot</li>
+    <li>Pick &quot;Install Elementary&quot; and follow the prompts</li>
+    </ul>
+    <p>After this, I'm prompted to remove the flash drive to restart, but it boots into a black screen. So we repeat the process, but this time we pick &quot;Try Elementary&quot; so we can get into a working OS (running off the flash drive). Then we'll do our boot modifications to the main install from this temporary one.</p>
+    <ul>
+    <li>Shut down computer</li>
+    <li>Put the flash drive back in and power it up</li>
+    <li>During boot up hold &quot;Alt&quot; to get EFI boot picker, pick the flash drive (if two show up, either one works).</li>
+    <li>As you see the boot screen, press an arrow key to stop the timeout</li>
+    <li>Press 'e' to enter grub's option mode</li>
+    <li>Add the word 'nomodeset' at end of the line that has the word &quot;splash&quot;</li>
+    <li>F10 or CTRL-x to boot</li>
+    <li>Pick &quot;Try Elementary&quot; this time, to boot into the live USB OS</li>
+    <li>Open terminal from applications</li>
+    </ul>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">sudo</span> -i  </code></pre>
+    <p>to work as root user</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">fdisk</span> -l</code></pre>
+    <p>to see what the drives are, find the one who's size is measured in Gigabytes (e.g. /dev/sda2). Now we are going to mount that main drive and associated OS folders so we can apply changes.</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">mount</span> /dev/sda2 /mnt/<br>	<span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> /dev /dev/pts /proc /sys /run<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mount</span> -B <span class="token variable">$i</span> /mnt<span class="token variable">$i</span><span class="token punctuation">;</span> <span class="token keyword">done</span><br>	<span class="token builtin class-name">cd</span> /mnt</code></pre>
+    <p>Now we chroot to emulate like we are operating in the main OS drive.</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">chroot</span> /mnt<br>	pico /etc/default/grub  </code></pre>
+    <p>to edit the grub file, add 'nomodeset' after &quot;splash&quot;</p>
+    <pre class="language-bash"><code class="language-bash">	CTRL-X </code></pre>
+    <p>to exit, choose &quot;y&quot; to save when prompted. Next we run &quot;update-grub&quot; so the
+    changes will stick.</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">update-grub</span></code></pre>
+    <p>Restart computer. You may be done now, but if you're thrown into grub prompt, then:</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">ls</span> </code></pre>
+    <p>to see the drives e.g. (hd0) (hd0, gpt2), (hd1)... or something like that</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">ls</span> <span class="token punctuation">(</span>hd0<span class="token punctuation">)</span></code></pre>
+    <p>to see what type of drive it is, look for the super large ext* one. Note &quot;(hd0, gpt2)&quot;
+    is a fake example name.</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token builtin class-name">set</span> <span class="token assign-left variable">boot</span><span class="token operator">=</span><span class="token punctuation">(</span>hd0, gpt2<span class="token punctuation">)</span><br>	<span class="token builtin class-name">set</span> <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token punctuation">(</span>hd0, gpt2<span class="token punctuation">)</span>/boot/grub<br>	insmod normal<br>	normal</code></pre>
+    <p>This should get you booted in. Then open terminal and</p>
+    <pre class="language-bash"><code class="language-bash">	<span class="token function">sudo</span> -i<br>	grub-install /dev/sda2<br>	<span class="token function">apt-get</span> udpate<br>	<span class="token function">apt-get</span> upgrade</code></pre>
+    <p>Now you should be able to shut down and restart as needed.</p>
+    <p>The above is a pseudo transcript of what I (sort of) did. If you have updates or additional info you think should be added, let me know and I'll add notes.</p>
+    
+</main>
+
+<figure>
+    <img src="../assets/img/imac-with-linux-elementary.jpg" alt="iMac running Elementary OS">
+</figure>

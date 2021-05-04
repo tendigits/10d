@@ -1,0 +1,38 @@
+<header>
+	<p class="pretitle">Custom interface</p>
+	<h1>Orca Box</h1>
+	<p class="posttitle">For sequencing midi</p>
+	</header>
+	<main>
+	<dl>
+	<dt>Status</dt>
+	<dd>Planning</dd>
+	</dl>
+	<p>The concept here is to create a physical UI with labeled buttons for controlling ORCA, running on a Raspberry Pi with midi out to multiple devices.
+	I'm researching what kind of buttons to use, how I'll label them, and what they will be mounted in. I'm also considering how to design the housing for the device.</p>
+	<p>Some initial decisions that have been made, but all subject to change:</p>
+	<ul>
+	<li>hyperpixel display hat on top of raspberry pi</li>
+	<li>1/2 globe of glass to magnify screen</li>
+	<li>grand central as &quot;keyboard&quot; control board for buttons</li>
+	<li>circuit python to map buttons to key press in grand central</li>
+	</ul>
+	<dl>
+	<dt>Update</dt>
+	<dd>Mar 24th 2021</dd>
+	</dl>
+	<p>I'm not entirely sure that Grand Central can act as a keyboard, but I believe with the <a href="https://circuitpython.readthedocs.io/projects/hid/en/latest/index.html">Adafruit HID Library</a> it can.</p>
+	<p>I'm also not sure how I'll do midi out. Ideally I can convert from USB from the Pi to a midi din port for the box, but I'm not sure yet how to accomplish that.</p>
+	<dl>
+	<dt>Update</dt>
+	<dd>Mar 31st 2021</dd>
+	</dl>
+	<p>I mapped out an initial idea for button layout. This seems really un-optimized with 62 buttons, but that's actually how many GPIO the Grand Central has, so I suppose it's possible. I'll do some more thinking... I believe this is not the final layout.</p>
+	<p><img src="../assets/img/orcabox-button-layout-1.png" alt="OrcaBox Layout 1"></p>
+	
+	</main>
+	
+	<figure>
+	<img src="../assets/img/orca1.jpg" alt="Distored view of the Orca Box (WIP)">
+	</figure>
+	

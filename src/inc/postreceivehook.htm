@@ -1,0 +1,34 @@
+<p>I've been using git for years, but somehow never got into using
+	hooks. In order to make updating this website smoother, I'm trying
+	out a very simple hook script which executes on the server
+	after I commit to it. After getting my local ssh configuration updated
+	so that I didn't have to manually log in each time, the next step was
+	figuring out how to commit directly into the server. This was done by
+	adding a &quot;remote&quot; which is an SSH user@address with full path to the
+	repo on the server.</p>
+	<p>With this additional remote, I now push into the main repo for storage
+	and then to this new remote when I want to update the site.</p>
+	<p>On the server, the .git/hooks/post-receive script is waiting and will
+	run:</p>
+	<pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span><br><span class="token function">npm</span> start</code></pre>
+	<p>Because I'm using 11ty, this triggers a rebuild of the static files. But
+	this script could do whatever you need to build your site.</p>
+	<p>Although this is a very simple solution, it took me a lot of false
+	starts and wrong ideas before I finally landed here.</p>
+	<p>Notes for future reference:</p>
+	<h2>On the server</h2>
+	<ul>
+	<li>When you setup your web server, install git</li>
+	<li>Clone your repo onto the server</li>
+	<li>Configure nginx or whatever server to point your site from the repo (where ever it builds final files to)</li>
+	<li>Add Lets Encrypt or other SSL</li>
+	<li>Add a bash script to do whatever build command you need in the git folder of your repo at <code>.git/hooks/post-receive</code></li>
+	<li>Run <code>git config --global receive.denyCurrentBranch updateInstead</code> so you don't get an error committing into a non-bare repo.</li>
+	</ul>
+	<h2>On your local</h2>
+	<ul>
+	<li>Avoid the login prompt by <a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent">adding your SSH key to the SSH Agent</a></li>
+	<li>Add a remote to the server <code>git remote add deploy ssh://&lt;your-name&gt;@&lt;your-ip&gt;/path/to/your/repo</code></li>
+	<li>run <code>git push deploy branchName</code> when you want to update the site</li>
+	</ul>
+	
