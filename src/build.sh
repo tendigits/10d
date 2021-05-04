@@ -1,6 +1,5 @@
 #!/bin/bash
 # START SPEED TEST
-# Note: speed test requires bc and gdate to be installed
 res1=$(gdate +%s.%N)
 # Lint
 # clang-format -i main.c
