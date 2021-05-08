@@ -178,7 +178,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	fputs("<a href='notes.html' title='Note Index'>Notes</a>", f);
 	fputs("<a href='projects.html' title='Project Index'>Projects</a>", f);
 	fputs("<a href='about.html' title='About this webiste'>About</a>", f);
-	fputs("<a href='../links/rss.xml' title='Syndication feed'>RSS</a>", f);
+	fputs("<a href='../feed.xml' title='Syndication feed'>RSS</a>", f);
 	fputs("</nav>", f);
 	fputs("<div class='wrap'>", f);
 	if(!fpinject(f, l, srcpath))
