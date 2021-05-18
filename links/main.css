@@ -69,7 +69,6 @@ body {
   background:#fff;
   max-width:900px;
   margin:0 auto;
-  padding-bottom:64px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
@@ -124,19 +123,16 @@ main > :not(figure), header {
 
 figure {
   width: 100%;
+  padding: 30px 0 0px;
   margin: 0;
 }
 
-figure:last-child {
-  margin: 0 0 -70px;
-}
-
-main {
-  padding-bottom:30px;
-}
-
 main p {
-  margin-bottom:1em;
+  padding-bottom:10px;
+}
+
+main p.last {
+  padding-bottom:30px;
 }
 
 figure img {
@@ -215,7 +211,6 @@ header p.posttitle {
     font-size:3vw;
   }
 }
-
 
 figcaption {
   font-style: italic;
