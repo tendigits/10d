@@ -1,39 +1,39 @@
 <!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='description' content='An ongoing collection of notes for my projects and interests'/><meta name='viewport' content='width=device-width,initial-scale=1'><link rel='alternate' type='application/rss+xml' title='RSS Feed' href='../feed.xml' /><link rel='stylesheet' type='text/css' href='../links/main.css'><title>Ten Digits &mdash; orca box</title><link rel='shortcut icon' type='image/png' href='/favicon.ico'></head><body><nav><a href='home.html' title='Home'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 575 575'><path d='M68 183c0 49.7 40.3 90 90 90m-90-90c49.7 0 90 40.3 90 90m0-135c0 74.6 33.6 135 75 135m-75-135c41.4 0 75 60.4 75 135m30-165c-20 60-10 110 30 150m-30-150c30 30 40 80 30 150m105-135c-40 30-60 75-60 135m60-135c10 60-10 105-60 135m165-120c-50 20-85 65-105 135m105-135c-10 60-45 105-105 135m90 45c-60 20-100 50-120 90m120-90c-10 50-50 80-120 90m-15-90c-20 30-35 70-45 120m45-120c10 50-5 90-45 120m-30-150c-30 50-35 105-15 165m15-165c10 60 5 115-15 165m-75-150c30 50 40 95 30 135m-30-135c-20 50-10 95 30 135M98 318c0 60 20 100 60 120M98 318c40 20 60 60 60 120' fill='#333' stroke='#333' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/></svg></a><a href='notes.html' title='Note Index'>Notes</a><a href='projects.html' title='Project Index'>Projects</a><a href='about.html' title='About this webiste'>About</a><a href='../feed.xml' title='Syndication feed'>RSS</a></nav><div class='wrap'><header>
-	<p class="pretitle">Custom interface</p>
-	<h1>Orca Box</h1>
-	<p class="posttitle">For sequencing midi</p>
-	</header>
-	<main>
-	<dl>
-	<dt>Status</dt>
-	<dd>Planning</dd>
-	</dl>
-	<p>The concept here is to create a physical UI with labeled buttons for controlling ORCA, running on a Raspberry Pi with midi out to multiple devices.
-	I'm researching what kind of buttons to use, how I'll label them, and what they will be mounted in. I'm also considering how to design the housing for the device.</p>
-	<p>Some initial decisions that have been made, but all subject to change:</p>
-	<ul>
-	<li>hyperpixel display hat on top of raspberry pi</li>
-	<li>1/2 globe of glass to magnify screen</li>
-	<li>grand central as &quot;keyboard&quot; control board for buttons</li>
-	<li>circuit python to map buttons to key press in grand central</li>
-	</ul>
-	<dl>
-	<dt>Update</dt>
-	<dd>Mar 24th 2021</dd>
-	</dl>
-	<p>I'm not entirely sure that Grand Central can act as a keyboard, but I believe with the <a href="https://circuitpython.readthedocs.io/projects/hid/en/latest/index.html">Adafruit HID Library</a> it can.</p>
-	<p>I'm also not sure how I'll do midi out. Ideally I can convert from USB from the Pi to a midi din port for the box, but I'm not sure yet how to accomplish that.</p>
-	<dl>
-	<dt>Update</dt>
-	<dd>Mar 31st 2021</dd>
-	</dl>
-	<p>I mapped out an initial idea for button layout. This seems really un-optimized with 62 buttons, but that's actually how many GPIO the Grand Central has, so I suppose it's possible. I'll do some more thinking... I believe this is not the final layout.</p>
-	<p><img src="../assets/img/orcabox-button-layout-1.png" alt="OrcaBox Layout 1"></p>
-	
-	</main>
-	
-	<figure>
-	<img src="../assets/img/orca1.jpg" alt="Distored view of the Orca Box (WIP)">
-	</figure>
-	</div><footer><p><em>Edited on Tue May  4 13:50:00 2021
+<p class="pretitle">Custom interface</p>
+<h1>Orca Box</h1>
+<p class="posttitle">For sequencing midi</p>
+</header>
+<main>
+<dl>
+<dt>Status</dt>
+<dd>Planning</dd>
+</dl>
+<p>The concept here is to create a physical UI with labeled buttons for controlling ORCA, running on a Raspberry Pi with midi out to multiple devices.
+I'm researching what kind of buttons to use, how I'll label them, and what they will be mounted in. I'm also considering how to design the housing for the device.</p>
+<p>Some initial decisions that have been made, but all subject to change:</p>
+<ul>
+<li>hyperpixel display hat on top of raspberry pi</li>
+<li>1/2 globe of glass to magnify screen</li>
+<li>grand central as &quot;keyboard&quot; control board for buttons</li>
+<li>circuit python to map buttons to key press in grand central</li>
+</ul>
+<dl>
+<dt>Update</dt>
+<dd>Mar 24th 2021</dd>
+</dl>
+<p>I'm not entirely sure that Grand Central can act as a keyboard, but I believe with the <a href="https://circuitpython.readthedocs.io/projects/hid/en/latest/index.html">Adafruit HID Library</a> it can.</p>
+<p>I'm also not sure how I'll do midi out. Ideally I can convert from USB from the Pi to a midi din port for the box, but I'm not sure yet how to accomplish that.</p>
+<dl>
+<dt>Update</dt>
+<dd>Mar 31st 2021</dd>
+</dl>
+<p>I mapped out an initial idea for button layout. This seems really un-optimized with 62 buttons, but that's actually how many GPIO the Grand Central has, so I suppose it's possible. I'll do some more thinking... I believe this is not the final layout.</p>
+<figure>
+	<img src="../assets/img/orcabox-button-layout-1.png" alt="OrcaBox Layout 1">
+</figure>
+<figure>
+<img src="../assets/img/orca1.jpg" alt="Distored view of the Orca Box (WIP)">
+</figure>
+
+</main></div><footer><p><em>Edited on Wed May 19 12:47:47 2021
  <a href='https://github.com/tendigits/10d/edit/master/src/inc/orca_box.htm'>[edit]</a><br/></em>Ten Digits © 2021 — <a href='https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt' target='_blank'>CC BY-NC 4.0</a><br><a href='https://webring.xxiivv.com/#random' target='_blank'><svg fill='none' stroke-linecap='square' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' stroke='#000' stroke-width='20' height='14' width='14'><path d='M201.962 210a60 60 0 10-103.924-60l-50 86.603'></path><path d='M98.038 210a60 60 0 10103.924-60l-50-86.603'></path><path d='M150 120a60 60 0 100 120h100'></path></svg> Find more handcrafted sites in the webring</a></p></footer></body></html>

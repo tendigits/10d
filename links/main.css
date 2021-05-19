@@ -127,12 +127,16 @@ figure {
   margin: 0;
 }
 
+figure img {
+  vertical-align: top;
+}
+
 main p {
   padding-bottom:10px;
 }
 
-main p.last {
-  padding-bottom:30px;
+main>*:last-child:not(figure) {
+  padding-bottom:80px;
 }
 
 figure img {
@@ -169,6 +173,12 @@ h2 {
   font-size: 3rem;
   padding: 5rem 0 1rem;
   margin: 0;
+}
+
+h3 {
+  font-size: 31px;
+  line-height: 1.3em;
+  padding-bottom: 0.3em;
 }
 
 @media screen and (max-width:767px){
