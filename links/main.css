@@ -89,12 +89,12 @@ footer {
 nav a,
 footer a {
   text-decoration: none;
-  color:#848484;
+  color:#6a6a6a;
 }
 
 nav a svg path {
-  fill: #848484;
-  stroke: #848484;
+  fill: #6a6a6a;
+  stroke: #6a6a6a;
 }
 
 @media screen and (max-width:767px){

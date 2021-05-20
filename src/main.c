@@ -186,8 +186,8 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	fputs("</div><footer><p>", f);
 	fpedited(f, srcpath);
 	fputs("Ten Digits © 2021 — ", f);
-	fputs("<a href='https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt' target='_blank'>CC BY-NC 4.0</a><br>", f);
-	fputs("<a href='https://webring.xxiivv.com/#random' target='_blank'><svg fill='none' stroke-linecap='square' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' stroke='#000' stroke-width='20' height='14' width='14'>", f);
+	fputs("<a href='https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt'>CC BY-NC 4.0</a><br>", f);
+	fputs("<a href='https://webring.xxiivv.com/#random'><svg fill='none' stroke-linecap='square' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' stroke='#000' stroke-width='20' height='14' width='14'>", f);
 	fputs("<path d='M201.962 210a60 60 0 10-103.924-60l-50 86.603'></path><path d='M98.038 210a60 60 0 10103.924-60l-50-86.603'></path><path d='M150 120a60 60 0 100 120h100'></path></svg> Find more handcrafted sites in the webring</a></p>", f);
 	fputs("</footer>", f);
 	fputs("</body></html>", f);
