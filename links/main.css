@@ -125,10 +125,13 @@ figure {
   width: 100%;
   padding: 30px 0 0px;
   margin: 0;
+  position: relative;
 }
 
 figure img {
   vertical-align: top;
+  width: 100%;
+  height: auto;
 }
 
 main p {
@@ -137,10 +140,6 @@ main p {
 
 main>*:last-child:not(figure) {
   padding-bottom:80px;
-}
-
-figure img {
-  width: 100%;
 }
 
 nav, 
@@ -224,6 +223,7 @@ header p.posttitle {
 
 figcaption {
   font-style: italic;
+  padding-top: 8px;
 }
 
 a {
@@ -505,3 +505,35 @@ main ul.projectlist li::before {
   padding:10px 0 0;
   font-style:normal;
 }
+
+/* image swapper */
+
+.high {
+  display:none;
+}
+
+figure a {
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  text-decoration: none;
+  color:#c13f00;
+  font-size:50px;
+}
+
+a.l {
+  display:none;
+}
+
+html:target .high,
+html:target a.l,
+body:target a.h {
+  display:block;
+}
+
+html:target .low,
+html:target a.h,
+body:target a.l{
+  display:none;
+}
+

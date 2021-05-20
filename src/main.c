@@ -156,7 +156,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	if(!f)
 		return f;
 	/* begin */
-	fputs("<!doctype html><html lang='en'>", f);
+	fputs("<!doctype html><html lang='en' id='imghigh'>", f);
 	fputs("<head>", f);
 	fprintf(f,
 		"<meta charset='utf-8'>"
@@ -170,7 +170,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 		"An ongoing collection of notes for my projects and interests",
 		name);
 	fputs("</head>", f);
-	fputs("<body>", f);
+	fputs("<body id='imglow'>", f);
 	fputs("<nav>", f);
 	fputs("<a href='home.html' title='Home'>", f);
 	fputs("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 575 575'><path d='M68 183c0 49.7 40.3 90 90 90m-90-90c49.7 0 90 40.3 90 90m0-135c0 74.6 33.6 135 75 135m-75-135c41.4 0 75 60.4 75 135m30-165c-20 60-10 110 30 150m-30-150c30 30 40 80 30 150m105-135c-40 30-60 75-60 135m60-135c10 60-10 105-60 135m165-120c-50 20-85 65-105 135m105-135c-10 ", f);
