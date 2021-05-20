@@ -358,20 +358,21 @@ pre[class*="language-"] {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
-:not(pre) > code[class*="language-"],
+
 pre[class*="language-"] {
   background: #2d2d2d;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  padding: .1em;
+  padding: 2px 4px;
   border-radius: .3em;
   white-space: normal;
+  background:#eee;
+  color:#333;
 }
 
 .token.comment,
