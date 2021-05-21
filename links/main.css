@@ -67,7 +67,7 @@ body {
 
 .wrap {
   background:#fff;
-  max-width:900px;
+  max-width:800px;
   margin:0 auto;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
@@ -76,7 +76,7 @@ nav, footer {
   display:flex;
   align-items:center;
   padding-bottom:32px;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   font-family: sans-serif;
 }
@@ -538,3 +538,6 @@ body:target a.l{
   display:none;
 }
 
+.pt {
+  padding-top:30px;
+}
