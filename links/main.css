@@ -513,6 +513,10 @@ main ul.projectlist li::before {
   display:none;
 }
 
+img.low {
+  image-rendering: crisp-edges;
+}
+
 figure a {
   position: absolute;
   top: 40px;
