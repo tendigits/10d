@@ -171,16 +171,14 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 		name);
 	fputs("</head>", f);
 	fputs("<body id='imglow'>", f);
-	fputs("<nav>", f);
-	fputs("<a href='home.html' title='Home'>", f);
+	fputs("<nav class='sitenav'>", f);
+	fputs("<a href='index.html' title='Home'>", f);
 	fputs("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 575 575'><path d='M68 183c0 49.7 40.3 90 90 90m-90-90c49.7 0 90 40.3 90 90m0-135c0 74.6 33.6 135 75 135m-75-135c41.4 0 75 60.4 75 135m30-165c-20 60-10 110 30 150m-30-150c30 30 40 80 30 150m105-135c-40 30-60 75-60 135m60-135c10 60-10 105-60 135m165-120c-50 20-85 65-105 135m105-135c-10 ", f);
 	fputs("60-45 105-105 135m90 45c-60 20-100 50-120 90m120-90c-10 50-50 80-120 90m-15-90c-20 30-35 70-45 120m45-120c10 50-5 90-45 120m-30-150c-30 50-35 105-15 165m15-165c10 60 5 115-15 165m-75-150c30 50 40 95 30 135m-30-135c-20 50-10 95 30 135M98 318c0 60 20 100 60 120M98 318c40 20 60 60 60 120' fill='#333' stroke='#333' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/></svg></a>", f);
-	fputs("<a href='notes.html' title='Notes list'>Notes</a>", f);
-	fputs("<a href='projects.html' title='Projects list'>Projects</a>", f);
-	fputs("<a href='about.html' title='About this webiste'>About</a>", f);
+	fputs("<a href='index.html#notes'>Notes</a>", f);
 	fputs("<a href='../feed.xml' title='Syndication feed'>RSS</a>", f);
-	fputs("<a href='#imghigh' class='h'>Load More Pixels</a>", f);
-	fputs("<a href='#imglow' class='l'>Show Fewer Pixels</a>", f);
+	fputs("<a href='#imghigh' class='h'>+ Pixels</a>", f);
+	fputs("<a href='#imglow' class='l'>- Pixels</a>", f);
 	fputs("</nav>", f);
 	fputs("<div class='wrap'>", f);
 	if(!fpinject(f, l, srcpath))
@@ -221,36 +219,18 @@ generate(Lexicon *l)
 	return 1;
 }
 
-/* Generate the content of an index page list */
+/* Generate index */
 int
 index(Lexicon *l, DIR *d)
 {
-	int i;
-	FILE *f;
 	while((dir = readdir(d)))
 		if(ssin(dir->d_name, ".htm") > 0) {
-			if(ssin(dir->d_name, "index.htm") != 0){
-				l->refs[l->len] = 0;
-				scpy(dir->d_name, l->files[l->len++], 64);
-			}
+			l->refs[l->len] = 0;
+			scpy(dir->d_name, l->files[l->len++], 64);
 		}
 	closedir(d);
 	printf("Indexed %d terms\n", l->len);
 	l->refs[l->len] = 0;
-	scpy("index.htm", l->files[l->len++], 64);
-	f = fopen("inc/index.htm", "w");
-	fputs("<header><p class='pretitle'>All files</p><h1>Index</h1><p class='posttitle'></p></header><main>", f);
-	fputs("<ul>", f);
-	for(i = 0; i < l->len; ++i) {
-		char filepath[64], filename[64];
-		scpy(l->files[i], filepath, 64);
-		scpy(l->files[i], filename, ssin(l->files[i], ".htm") + 1);	
-		if(ssin(filepath, "index.htm") != 0) {	
-			fprintf(f, "<li><a href='%sl'>%s</a></li>", filepath, scsw(filename, '_', ' '));
-		}
-	}
-	fputs("</ul></main>", f);
-	fclose(f);
 	return 1;
 }
 
