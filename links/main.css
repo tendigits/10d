@@ -140,6 +140,11 @@ figure img {
   height: auto;
 }
 
+figure + h3,
+figure + p {
+  margin-top: 30px;
+}
+
 main p {
   padding-bottom:10px;
 }
