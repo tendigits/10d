@@ -164,7 +164,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 		"<meta name='viewport' content='width=device-width,initial-scale=1'>"
 		"<link rel='alternate' type='application/rss+xml' title='RSS Feed' "
 		"href='../feed.xml' />"
-		"<link rel='stylesheet' type='text/css' href='../links/main.css?c=20210630'>"
+		"<link rel='stylesheet' type='text/css' href='../links/main.css?c=20210719'>"
 		"<title>" NAME " &mdash; %s</title>"
 		"<link rel='shortcut icon' type='image/png' href='/favicon.ico'>",
 		"An ongoing collection of notes for my projects and interests",
@@ -177,8 +177,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	fputs("60-45 105-105 135m90 45c-60 20-100 50-120 90m120-90c-10 50-50 80-120 90m-15-90c-20 30-35 70-45 120m45-120c10 50-5 90-45 120m-30-150c-30 50-35 105-15 165m15-165c10 60 5 115-15 165m-75-150c30 50 40 95 30 135m-30-135c-20 50-10 95 30 135M98 318c0 60 20 100 60 120M98 318c40 20 60 60 60 120' fill='#333' stroke='#333' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/></svg></a>", f);
 	fputs("<a href='index.html#notes'>Notes</a>", f);
 	fputs("<a href='../feed.xml' title='Syndication feed'>RSS</a>", f);
-	fputs("<a href='#imghigh' class='h'>+ Pixels</a>", f);
-	fputs("<a href='#imglow' class='l'>- Pixels</a>", f);
+	fputs("<button class='js-imgswap' title='Toggle between low and high resolution images on page' aria-label='Toggle between low and high resolution images on page'>+ Pixels</button>", f);
 	fputs("</nav>", f);
 	fputs("<div class='wrap'>", f);
 	if(!fpinject(f, l, srcpath))
@@ -190,6 +189,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	fputs("<a href='https://webring.xxiivv.com/#random'><svg fill='none' stroke-linecap='square' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' stroke='#000' stroke-width='20' height='14' width='14'>", f);
 	fputs("<path d='M201.962 210a60 60 0 10-103.924-60l-50 86.603'></path><path d='M98.038 210a60 60 0 10103.924-60l-50-86.603'></path><path d='M150 120a60 60 0 100 120h100'></path></svg> Find more handcrafted sites in the webring</a></p>", f);
 	fputs("</footer>", f);
+	fputs("<script src='../links/main.js'></script>", f);
 	fputs("</body></html>", f);
 	return f;
 }

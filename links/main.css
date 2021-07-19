@@ -71,6 +71,29 @@ body {
   line-height:1.4em;
 }
 
+.js-imgswap {
+  display:none;
+  text-decoration: none;
+  color: #000;
+  font-size: 8px;
+  background: #fff;
+  font-family: 'pix Chicago';
+  padding: 3px 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-left:auto;
+  cursor: pointer;
+}
+
+.js-imgswap:hover {
+  background:#000;
+  color:#fff;
+}
+
+.js-imgswap.util--show {
+  display:block;
+}
+
 .wrap {
   background:#fff;
   max-width:800px;
@@ -115,46 +138,44 @@ nav a svg path {
   }
 }
 
-main > :not(figure), header {
+main > :not(img), header {
   width:calc(100% - 128px);
   max-width:1280px;
   margin: 0 auto;  
 }
 
 @media screen and (max-width:767px){
-  nav.sitenav, main > :not(figure), header, footer {
+  nav.sitenav, main > :not(img), header, footer {
     width:calc(100% - 60px);
   }
 }
 
-figure {
-  width: 100%;
-  padding: 30px 0 0px;
-  margin: 0;
-  position: relative;
-}
-
-figure img {
+main img {
   vertical-align: top;
   width: 100%;
   height: auto;
+  padding-bottom:3rem;
+  image-rendering: crisp-edges;
 }
 
-figure + h3,
-figure + p {
-  margin-top: 30px;
+main img:last-child {
+  padding-bottom:0;
 }
 
 main p {
-  padding-bottom:10px;
+  padding-bottom:1rem;
 }
 
-main>*:last-child:not(figure) {
+main p + img {
+  padding-top:3rem;
+}
+
+main>*:last-child:not(img) {
   padding-bottom:80px;
 }
 
 nav.sitenav, 
-main > :not(figure), 
+main > :not(img), 
 figcaption,
 header, 
 footer {
@@ -164,7 +185,7 @@ footer {
 
 @media screen and (max-width:767px){
   nav.sitenav, 
-  main > :not(figure), 
+  main > :not(img), 
   figcaption,
   header, 
   footer {
@@ -181,12 +202,13 @@ h1,h2,h3,h4,h5,h6 {
 
 h2 {
   font-size: 3rem;
-  padding: 5rem 0 1rem;
+  padding: 2rem 0 1rem;
   margin: 0;
 }
 
 h3 {
   font-size: 31px;
+  padding: 1rem 0 1rem;
   line-height: 1.3em;
   padding-bottom: 0.3em;
 }
@@ -301,9 +323,6 @@ nav.sitenav a{
   margin-right:14px;
 }
 
-main img {
-  max-width:100%;
-}
 
 main ul {
   list-style-type: none;
@@ -520,54 +539,6 @@ main ul.projectlist li::before {
   font-style:normal;
 }
 
-/* image swapper */
-
-.high {
-  display:none;
-}
-
-img.low {
-  image-rendering: crisp-edges;
-}
-
-a.l, a.h {
-  text-decoration: none;
-  color: #000;
-  font-size: 8px;
-  background: #fff;
-  font-family: 'pix Chicago';
-  padding: 0 5px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  margin-left:auto;
-}
-
-nav a.l, 
-nav a.h {
-  margin-right:0;
-}
-
-a.l a:hover,
-a.h a:hover {
-  background:#000;
-  color:#fff;
-}
-
-a.l {
-  display:none;
-}
-
-html:target .high,
-html:target a.l,
-body:target a.h {
-  display:block;
-}
-
-html:target .low,
-html:target a.h,
-body:target a.l{
-  display:none;
-}
 
 .pt {
   padding-top:30px;
@@ -590,3 +561,4 @@ ol li {
     flex-direction: column;
   }
 }
+
