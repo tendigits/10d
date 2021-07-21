@@ -155,7 +155,9 @@ main img {
   width: 100%;
   height: auto;
   padding-bottom:3rem;
+  -ms-interpolation-mode: nearest-neighbor;
   image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 main img:last-child {
