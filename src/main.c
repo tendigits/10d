@@ -163,7 +163,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 		"<meta name='description' content='%s'/>"
 		"<meta name='viewport' content='width=device-width,initial-scale=1'>"
 		"<link rel='alternate' type='application/rss+xml' title='RSS Feed' "
-		"href='../feed.xml' />"
+		"href='https://tendigits.space/feed.xml' />"
 		"<link rel='stylesheet' type='text/css' href='../links/main.css?c=20210721'>"
 		"<title>" NAME " &mdash; %s</title>"
 		"<link rel='shortcut icon' type='image/png' href='/favicon.ico'>",
