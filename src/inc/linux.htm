@@ -1,0 +1,37 @@
+<header>
+    <p class="pretitle">Apps & Utilities</p>
+    <h1>Linux Setup</h1>
+    <p class="posttitle">My current configuration</p>
+</header>
+<main>
+<h2>Introduction</h2>
+<p>I'm not an experienced Unix/Linux user, but I've setup webservers, fileservers, and done a number of command-line things over the years.
+Recently, I've re-purposed a single-board computer that I was using in my {birdhouse_cam} project to be a daily-driver personal computer.
+These are my notes and reminders of how I've set things up, for future reference.</p>
+
+<h2>The Hardware</h2>
+<p>LattePanda Alpha, random small LCD monitor, Keychron K3 keyboard, Logi MX Anywhere 3 mouse, StarTech 4 port USB 3 hub. </p>
+
+<h2>Software</h2>
+<p>Currently using Manjaro with i3 as the operating system.<p>
+<p>Applications in use:</p>
+<ul>
+<li>GUI File Browser: PCManFM</li>
+<li>Browser: Firefox</li>
+<li>Code editor: Micro</li>
+<li>GUI for System (PulseAudio): pavucontrol</li>
+<li>Audio editor: Reaper</li>
+<li>Audio ins/outs: Jack2</li>
+<li>GUI for Jack: Cadence</li>
+</ul>
+<h2>i3 Configurations</h2>
+<p>There's a lot of stuff in here, I've added a couple things, but I'll be exploring this more soon.</p>
+<p>Location: <code class="language-bash">~/.i3/config</code></p>
+<p>Set Resolution: <code class="language-bash">exec xrandr --output HDMI-1 --mode 1920x1080</code></p>
+<p>Add Screenshot Binding: <code class="language-bash">bindsym --release $mod+shift+s exec import ~/screenshot.png</code></p>
+<h2>Xresources Configurations</h2>
+<p>Apparently the default terminal called by i3 in my case is urxvtd, and it's effected by settings in Xresources</p>
+<p>Location: <code class="language-bash">~/.Xresources</code>
+<p>Change font in default terminal: <code class="language-bash">URxvt.font: xft:OperatorMonoSSm-Book.otf:pixelsize=20</code></p>
+<p>Location for OTF or TTF font files: <code class="language-bash">/usr/share/fonts/TTF</code> and <code class="language-bash">/usr/share/fonts/OTF</code></p>
+</main>

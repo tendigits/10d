@@ -1,6 +1,6 @@
 #!/bin/bash
 # START SPEED TEST
-res1=$(gdate +%s.%N)
+res1=$(date +%s.%N)
 # Lint
 # clang-format -i main.c
 
@@ -34,7 +34,7 @@ mkdir ../site
 # Cleanup
 rm -f ./main
 # FINISH SPEED TEST
-res2=$(gdate +%s.%N)
+res2=$(date +%s.%N)
 dt=$(echo "$res2 - $res1" | bc)
 dd=$(echo "$dt/86400" | bc)
 dt2=$(echo "$dt-86400*$dd" | bc)
