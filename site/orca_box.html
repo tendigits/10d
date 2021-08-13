@@ -6,25 +6,38 @@
 <main>
 <dl>
 <dt>Status</dt>
-<dd>Planning</dd>
+<dd>Prototyping</dd>
 </dl>
-<p>The concept here is to create a physical UI with labeled buttons for controlling ORCA, running on a Raspberry Pi with midi out to multiple devices.
-I'm researching what kind of buttons to use, how I'll label them, and what they will be mounted in. I'm also considering how to design the housing for the device.</p>
-<p>Some initial decisions that have been made, but all subject to change:</p>
+<p>The concept here is to create a physical controller with knobs and buttons for "playing" <a href="https://hundredrabbits.itch.io/orca">Orca</a>.</p>
+<h3>Hardware</h3>
 <ul>
-<li>hyperpixel display hat on top of raspberry pi</li>
-<li>1/2 globe of glass to magnify screen</li>
-<li>grand central as &quot;keyboard&quot; control board for buttons</li>
-<li>circuit python to map buttons to key press in grand central</li>
+<li>Raspberry Pi computer</li>
+<li>Pi-Sound hat to provide Midi Din out</li>
+<li>Grand central connected as USB &quot;keyboard&quot; device</li>
+<li>Circuit python code maps buttons and knobs to keypresses or series of keypresses</li>
+<li>Small display</li>
+<li>Housing to provide all-in-one unit</li>
+<li>External keyboard/mouse also used</li>
+</ul>
+<h3>Software</h3>
+<ul>
+<li>Patchbox OS</li>
+<li>Orca, uxn version</li>
 </ul>
 <dl>
-<dt>Update</dt>
-<dd>Mar 24th 2021</dd>
+<dt>Project Log</dt>
+<dd>Aug 13th 2021</dd>
 </dl>
-<p>I'm not entirely sure that Grand Central can act as a keyboard, but I believe with the <a href="https://circuitpython.readthedocs.io/projects/hid/en/latest/index.html">Adafruit HID Library</a> it can.</p>
-<p>I'm also not sure how I'll do midi out. Ideally I can convert from USB from the Pi to a midi din port for the box, but I'm not sure yet how to accomplish that.</p>
+<p>I've setup enough code to prove that a potentiometer knob can be mapped to the range of values that are most useful to Orca: 0-9 and A-Z.
+There was some challenge in tuning code to get a natural response. Without doing that it can feel jumpy.</p>
+<p>I'm in the breadboard prototyping phase now, but I've (for now) settled on using about 6 knobs and 15 buttons. The buttons can be mapped to generate a series
+of keypresses that render useful patterns like trackers, scales, etc. The knobs can be mapped to specific variables which will be available
+in fixed locations on the bottom row. A button could be mapped to generate the variable code too.</p>
+<p>I don't yet have a great vision for the housing design. I'd like it to be well considered and nicely crafted.</p>
+<p>I have dropped the idea of >15 buttons as I realized that augmenting a real keyboard and mouse is much better than trying to replicate it.
+I've also dropped the idea of using the half globe, as the screen needs to be easily readable to be useful.</p>
 <dl>
-<dt>Update</dt>
+<dt>Project Log</dt>
 <dd>Mar 31st 2021</dd>
 </dl>
 <p>I mapped out an initial idea for button layout. This seems really un-optimized with 62 buttons, but that's actually how many GPIO the Grand Central has, so I suppose it's possible. I'll do some more thinking... I believe this is not the final layout.</p>
@@ -34,9 +47,13 @@ I'm researching what kind of buttons to use, how I'll label them, and what they 
  data-hisrc="../assets/img/orcabox-button-layout-1.png" 
  data-lowsrc="../assets/img/orcabox-button-layout-1-low.png" alt="First OrcaBox Layout Idea" loading="lazy" width="400" height="300">
 
-<img class="img low" 
- src="../assets/img/orca1-low.png" 
- data-hisrc="../assets/img/orca1.jpg" 
- data-lowsrc="../assets/img/orca1-low.png" alt="Distored view of the Orca Box (WIP)" loading="lazy" width="400" height="300">
-</main></div><footer><p><em>Edited on Thu Aug 12 12:16:54 2021
+<dl>
+<dt>Project Log</dt>
+<dd>Mar 24th 2021</dd>
+</dl>
+<p>I'm not entirely sure that Grand Central can act as a keyboard, but I believe with the <a href="https://circuitpython.readthedocs.io/projects/hid/en/latest/index.html">Adafruit HID Library</a> it can.</p>
+<p>I'm also not sure how I'll do midi out. Ideally I can convert from USB from the Pi to a midi din port for the box, but I'm not sure yet how to accomplish that.</p>
+
+</main>
+</div><footer><p><em>Edited on Fri Aug 13 14:51:22 2021
  <a href='https://github.com/tendigits/10d/edit/master/src/inc/orca_box.htm'>[edit]</a><br/></em>Ten Digits © 2021 — <a href='https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt'>CC BY-NC 4.0</a><br><a href='https://webring.xxiivv.com/#random'><svg fill='none' stroke-linecap='square' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' stroke='#000' stroke-width='20' height='14' width='14'><path d='M201.962 210a60 60 0 10-103.924-60l-50 86.603'></path><path d='M98.038 210a60 60 0 10103.924-60l-50-86.603'></path><path d='M150 120a60 60 0 100 120h100'></path></svg> Find more handcrafted sites in the webring</a></p></footer><script src='../links/main.js'></script></body></html>
