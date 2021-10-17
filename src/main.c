@@ -1,5 +1,7 @@
 #include <dirent.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <sys/dir.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <time.h>
@@ -75,9 +77,9 @@ fpedited(FILE *f, char *path)
 	struct stat attr;
 	stat(path, &attr);
 	fputs("<em>", f);
-	fprintf(f, "Edited on %s ", ctime(&attr.st_mtime));
-	fprintf(f, "<a href='" SOURCE "/src/%s'>[edit]</a><br/>", path);
-	fputs("</em>", f);
+	fprintf(f, "Last <a href='" SOURCE "/src/%s'>edited</a> ", path);
+	fprintf(f, "on %s", ctime(&attr.st_mtime));
+	fputs("</em><br/>", f);
 }
 
 /* include a specific file */
@@ -149,6 +151,26 @@ fpinject(FILE *f, Lexicon *l, char *filepath)
 	return 1;
 }
 
+int
+fpindex(FILE *f)
+{
+	struct dirent **d;
+	int n, i = 0;
+	n = scandir("inc", &d, NULL, alphasort);
+	if(n < 0)
+		return error("scandir", "failed");
+	fputs("<ul>", f);
+	while(i < n) {
+		char filepath[64], filename[64];
+		if(d[i]->d_name[0] != '.')
+			fprintf(f, "<li><a href='%sl'>%s</a></li>", scpy(d[i]->d_name, filepath, 64), scsw(scpy(d[i]->d_name, filename, ssin(d[i]->d_name, ".htm") + 1), '_', ' '));
+		free(d[i++]);
+	}
+	fputs("</ul>", f);
+	free(d);
+	return 1;
+}
+
 /* Main content writer for HTML pages */
 FILE *
 build(FILE *f, Lexicon *l, char *name, char *srcpath)
@@ -164,7 +186,7 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 		"<meta name='viewport' content='width=device-width,initial-scale=1'>"
 		"<link rel='alternate' type='application/rss+xml' title='RSS Feed' "
 		"href='https://tendigits.space/feed.xml' />"
-		"<link rel='stylesheet' type='text/css' href='../links/main.css?c=20210721'>"
+		"<link rel='stylesheet' type='text/css' href='../links/main.css?c=20211017'>"
 		"<title>" NAME " &mdash; %s</title>"
 		"<link rel='shortcut icon' type='image/png' href='/favicon.ico'>",
 		"An ongoing collection of notes for my projects and interests",
@@ -175,21 +197,19 @@ build(FILE *f, Lexicon *l, char *name, char *srcpath)
 	fputs("<a href='index.html' title='Home'>", f);
 	fputs("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 575 575'><path d='M68 183c0 49.7 40.3 90 90 90m-90-90c49.7 0 90 40.3 90 90m0-135c0 74.6 33.6 135 75 135m-75-135c41.4 0 75 60.4 75 135m30-165c-20 60-10 110 30 150m-30-150c30 30 40 80 30 150m105-135c-40 30-60 75-60 135m60-135c10 60-10 105-60 135m165-120c-50 20-85 65-105 135m105-135c-10 ", f);
 	fputs("60-45 105-105 135m90 45c-60 20-100 50-120 90m120-90c-10 50-50 80-120 90m-15-90c-20 30-35 70-45 120m45-120c10 50-5 90-45 120m-30-150c-30 50-35 105-15 165m15-165c10 60 5 115-15 165m-75-150c30 50 40 95 30 135m-30-135c-20 50-10 95 30 135M98 318c0 60 20 100 60 120M98 318c40 20 60 60 60 120' fill='#333' stroke='#333' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/></svg></a>", f);
-	fputs("<a href='index.html#notes'>Notes</a>", f);
 	fputs("<a href='../feed.xml' title='Syndication feed'>RSS</a>", f);
-	fputs("<button class='js-imgswap' title='Toggle between low and high resolution images on page' aria-label='Toggle between low and high resolution images on page'>+ Pixels</button>", f);
 	fputs("</nav>", f);
 	fputs("<div class='wrap'>", f);
+	fprintf(f,"<main><header><h1>%s</h1></header>", name);
 	if(!fpinject(f, l, srcpath))
 		printf(">>> Building failed: %s\n", name);
-	fputs("</div><footer><p>", f);
+	fputs("</main></div><footer><p>", f);
 	fpedited(f, srcpath);
 	fputs("Ten Digits © 2021 — ", f);
 	fputs("<a href='https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt'>CC BY-NC 4.0</a><br>", f);
 	fputs("<a href='https://webring.xxiivv.com/#random'><svg fill='none' stroke-linecap='square' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' stroke='#000' stroke-width='20' height='14' width='14'>", f);
 	fputs("<path d='M201.962 210a60 60 0 10-103.924-60l-50 86.603'></path><path d='M98.038 210a60 60 0 10103.924-60l-50-86.603'></path><path d='M150 120a60 60 0 100 120h100'></path></svg> Find more handcrafted sites in the webring</a></p>", f);
 	fputs("</footer>", f);
-	fputs("<script src='../links/main.js'></script>", f);
 	fputs("</body></html>", f);
 	return f;
 }
@@ -223,6 +243,8 @@ generate(Lexicon *l)
 int
 index(Lexicon *l, DIR *d)
 {
+	FILE *f;
+	struct dirent *dir;
 	while((dir = readdir(d)))
 		if(ssin(dir->d_name, ".htm") > 0) {
 			l->refs[l->len] = 0;
@@ -231,6 +253,10 @@ index(Lexicon *l, DIR *d)
 	closedir(d);
 	printf("Indexed %d terms\n", l->len);
 	l->refs[l->len] = 0;
+	scpy("index.htm", l->files[l->len++], 128);
+	f = fopen("inc/index.htm", "w");
+	fpindex(f);
+	fclose(f);
 	return 1;
 }
 

@@ -1,97 +1,12 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Libre Caslon Text';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-5DGjG2u9vUKg.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Libre Caslon Text';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/DdT678IGsGw1aF1JU10PUbTvNNaDMfq95-BDGjG2u9s.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Libre Caslon Text';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/DdT878IGsGw1aF1JU10PUbTvNNaDMfq21-JJHRO0i9o.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Libre Caslon Text';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-JJHRO0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Libre Caslon Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr1lYfxlPCz4c3AU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Libre Caslon Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../assets/fonts/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr1lWfxlPCz4c.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'pix Chicago';
-  font-style: normal;
-  font-weight: normal;
-  src: local('pix Chicago'), url('../assets/fonts/pixChicago.woff') format('woff');
-  }
 
 body {
   margin:0;
   padding:15px 64px;
   background: #efefef;  
-  font-family:'Libre Caslon Text', caslon, georgia, serif;
+  font-family:caslon, georgia, serif;
   background: #f3f3f3; 
   color: #333; 
   line-height:1.4em;
-}
-
-.js-imgswap {
-  display:none;
-  text-decoration: none;
-  color: #000;
-  font-size: 8px;
-  background: #fff;
-  font-family: 'pix Chicago';
-  padding: 3px 5px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  margin-left:auto;
-  cursor: pointer;
-}
-
-.js-imgswap:hover {
-  background:#000;
-  color:#fff;
-}
-
-.js-imgswap.util--show {
-  display:block;
 }
 
 .wrap {
@@ -99,6 +14,15 @@ body {
   max-width:800px;
   margin:0 auto;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding:0;
+}
+
+main {
+  padding: 2rem;
+}
+
+header {
+  padding-bottom:0.5rem;
 }
 
 nav.sitenav, footer {
@@ -138,72 +62,19 @@ nav a svg path {
   }
 }
 
-main > :not(img), header {
-  width:calc(100% - 128px);
-  max-width:1280px;
-  margin: 0 auto;  
-}
-
-@media screen and (max-width:767px){
-  nav.sitenav, main > :not(img), header, footer {
-    width:calc(100% - 60px);
-  }
-}
-
-main img {
-  vertical-align: top;
-  width: 100%;
-  height: auto;
-  padding-bottom:3rem;
-  -ms-interpolation-mode: nearest-neighbor;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
-
-main img:last-child {
-  padding-bottom:0;
-}
-
 main p {
   padding-bottom:1rem;
 }
 
-main p + img {
-  padding-top:3rem;
-}
-
-main>*:last-child:not(img):not(pre) {
-  padding-bottom:80px;
-}
-
-nav.sitenav, 
-main > :not(img), 
-figcaption,
-header, 
-footer {
-  padding-left: 64px;
-  padding-right: 64px;
-}
-
-@media screen and (max-width:767px){
-  nav.sitenav, 
-  main > :not(img), 
-  figcaption,
-  header, 
-  footer {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 h1,h2,h3,h4,h5,h6 {
-  font-family:'Libre Caslon Display', caslon, georgia, serif;
+  font-family: caslon, georgia, serif;
   line-height:1em;
   font-weight:400;
+  text-transform: capitalize;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 2rem 0 1rem;
   margin: 0;
 }
@@ -222,43 +93,13 @@ h3 {
   }
 }
 
-header p.pretitle {
-  font-family:'Libre Caslon Display', caslon, georgia, serif;
-  font-size:3rem;
-  line-height: 1em;
-  padding: 64px 0 13px;
-  margin:0;
-}
-
 header h1 {
-  font-size:8rem;
-  margin: 0 0 0.15em;
-}
-
-
-header p.posttitle {
-  font-size:1.4rem;
-  line-height: 1em;
-  padding: 0 0 64px;
+  font-size:4rem;
   margin: 0;
-  font-style: italic;
 }
 
-@media screen and (max-width:767px){
-  header p.pretitle {
-    font-size:6vw;
-  }
-  header h1 {
-    font-size:16vw;
-  }
-  header p.posttitle {
-    font-size:3vw;
-  }
-}
-
-figcaption {
-  font-style: italic;
-  padding-top: 8px;
+ul {
+  padding:0;
 }
 
 a {
