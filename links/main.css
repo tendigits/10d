@@ -29,6 +29,7 @@ nav.sitenav, footer {
   display:flex;
   align-items:center;
   padding-bottom:10px;
+  width: calc(100% - 3rem);
   max-width: 800px;
   margin: 0 auto;
   font-family: sans-serif;
