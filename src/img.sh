@@ -2,10 +2,7 @@
 # Ten Digits image processing script, based on: https://git.sr.ht/~rostiger/nchrs/blob/main/src/batchVariants.sh
 SRC="img"
 DST="../assets/img"
-SIZES=(400)
 MAXWIDTH=1600
-COLORS=4
-TINTCOLOR='wheat'
 
 function resize () {
 	
@@ -37,25 +34,6 @@ function resize () {
 			continue
 	fi
 
-	# create smaller size
-	echo $file
-	width=$(identify -format "%w" "$file")> /dev/null
-	  for size in "${SIZES[@]}"
-	  do
-		output="$dst/$fileBase-low.png"
-	  if [[ ! -f $output ]]; then
-		# resize only if bigger
-		if [[ $width -ge $size ]]; then
-		  echo -n "| ${size} "
-				convert $file -strip -auto-orient -resize $size -dither FloydSteinberg -colorspace Gray -fill $TINTCOLOR -tint 90 -colors $COLORS $output
-		else
-			#dither only
-		  echo -n "| ${width} "
-				convert $file -strip -auto-orient -dither FloydSteinberg -colorspace Gray -fill $TINTCOLOR -tint 90 -colors $COLORS $output
-			fi
-	  else echo -n "| ----- "
-	  fi
-	done
 	# Strip EXIF data and resize high res image
 	output="$dst/$name"
 	if [[ ! -f $output ]]; then
